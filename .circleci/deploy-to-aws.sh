@@ -15,12 +15,7 @@ if [ -z "${AWS_BUCKET}" ]; then
 fi
 
 if ! [ -x "$(command -v aws)" ]; then
-	if ! [ -x "$(command -v pip)" ]; then
-		echo "The AWS CLI is not installed and pip is missing so it can't be installed."
-		exit 1
-	fi
-
-	pip install --quiet awscli
+	apt-get install awscli
 fi
 
 aws s3 sync ${BASEDIR}/_site/public s3://$AWS_BUCKET
