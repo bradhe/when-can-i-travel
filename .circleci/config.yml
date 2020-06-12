@@ -46,7 +46,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: npm run build
-      - run: bash ./.circleci/deploy-to-aws.sh
+      - run: bash ~/when-can-i-travel/.circleci/deploy-to-aws.sh
 
 workflows:
   version: 2
