@@ -1,5 +1,6 @@
 ---
 name: Armenia
+slug: armenia
 code: AM
 ---
 

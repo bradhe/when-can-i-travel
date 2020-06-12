@@ -1,5 +1,6 @@
 ---
 name: Honduras
+slug: honduras
 code: HN
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Pakistan
+slug: pakistan
 code: PK
 ---
 

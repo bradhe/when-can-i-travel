@@ -1,5 +1,6 @@
 ---
 name: Cayman Islands
+slug: cayman-islands
 code: KY
 ---
 

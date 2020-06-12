@@ -1,5 +1,6 @@
 ---
 name: France
+slug: france
 code: FR
 ---
 

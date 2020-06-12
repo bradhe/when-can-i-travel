@@ -1,5 +1,6 @@
 ---
 name: Liberia
+slug: liberia
 code: LR
 ---
 

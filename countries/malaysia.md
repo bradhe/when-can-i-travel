@@ -1,5 +1,6 @@
 ---
 name: Malaysia
+slug: malaysia
 code: MY
 ---
 

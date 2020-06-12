@@ -1,5 +1,6 @@
 ---
 name: Suriname
+slug: suriname
 code: SR
 ---
 

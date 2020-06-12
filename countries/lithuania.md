@@ -1,5 +1,6 @@
 ---
 name: Lithuania
+slug: lithuania
 code: LT
 ---
 

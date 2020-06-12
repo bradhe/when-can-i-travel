@@ -1,5 +1,6 @@
 ---
 name: Guatemala
+slug: guatemala
 code: GT
 ---
 

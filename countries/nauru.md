@@ -1,5 +1,6 @@
 ---
 name: Nauru
+slug: nauru
 code: NR
 ---
 

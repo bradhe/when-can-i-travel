@@ -1,5 +1,6 @@
 ---
 name: Georgia
+slug: georgia
 code: GE
 ---
 

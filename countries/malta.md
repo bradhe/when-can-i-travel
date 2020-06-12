@@ -1,5 +1,6 @@
 ---
 name: Malta
+slug: malta
 code: MT
 ---
 

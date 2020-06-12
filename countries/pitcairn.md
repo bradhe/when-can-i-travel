@@ -1,5 +1,6 @@
 ---
 name: Pitcairn
+slug: pitcairn
 code: PN
 ---
 

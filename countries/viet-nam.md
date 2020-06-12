@@ -1,5 +1,6 @@
 ---
 name: Viet Nam
+slug: viet-nam
 code: VN
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Angola
+slug: angola
 code: AO
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Zimbabwe
+slug: zimbabwe
 code: ZW
 ---
 

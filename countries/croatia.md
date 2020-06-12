@@ -1,5 +1,6 @@
 ---
 name: Croatia
+slug: croatia
 code: HR
 ---
 

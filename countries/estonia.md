@@ -1,5 +1,6 @@
 ---
 name: Estonia
+slug: estonia
 code: EE
 ---
 

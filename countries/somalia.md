@@ -1,5 +1,6 @@
 ---
 name: Somalia
+slug: somalia
 code: SO
 ---
 

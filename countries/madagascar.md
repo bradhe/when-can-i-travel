@@ -1,5 +1,6 @@
 ---
 name: Madagascar
+slug: madagascar
 code: MG
 ---
 

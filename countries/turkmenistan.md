@@ -1,5 +1,6 @@
 ---
 name: Turkmenistan
+slug: turkmenistan
 code: TM
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Bulgaria
+slug: bulgaria
 code: BG
 ---
 

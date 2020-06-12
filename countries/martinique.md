@@ -1,5 +1,6 @@
 ---
 name: Martinique
+slug: martinique
 code: MQ
 ---
 

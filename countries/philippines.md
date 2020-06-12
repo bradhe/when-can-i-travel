@@ -1,5 +1,6 @@
 ---
 name: Philippines
+slug: philippines
 code: PH
 ---
 

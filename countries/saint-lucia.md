@@ -1,5 +1,6 @@
 ---
 name: Saint Lucia
+slug: saint-lucia
 code: LC
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Wallis And Futuna
+slug: wallis-and-futuna
 code: WF
 ---
 

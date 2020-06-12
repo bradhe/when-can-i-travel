@@ -1,5 +1,6 @@
 ---
 name: Guyana
+slug: guyana
 code: GY
 ---
 

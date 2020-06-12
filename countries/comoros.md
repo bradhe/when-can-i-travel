@@ -1,5 +1,6 @@
 ---
 name: Comoros
+slug: comoros
 code: KM
 ---
 

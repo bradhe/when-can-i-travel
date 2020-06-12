@@ -1,5 +1,6 @@
 ---
 name: Tunisia
+slug: tunisia
 code: TN
 ---
 

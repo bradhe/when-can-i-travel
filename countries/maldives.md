@@ -1,5 +1,6 @@
 ---
 name: Maldives
+slug: maldives
 code: MV
 ---
 

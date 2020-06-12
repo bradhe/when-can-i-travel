@@ -1,5 +1,6 @@
 ---
 name: Austria
+slug: austria
 code: AT
 ---
 

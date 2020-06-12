@@ -1,5 +1,6 @@
 ---
 name: Albania
+slug: albania
 code: AL
 ---
 

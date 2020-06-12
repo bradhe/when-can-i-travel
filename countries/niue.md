@@ -1,5 +1,6 @@
 ---
 name: Niue
+slug: niue
 code: NU
 ---
 

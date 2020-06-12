@@ -1,5 +1,6 @@
 ---
 name: Malawi
+slug: malawi
 code: MW
 ---
 

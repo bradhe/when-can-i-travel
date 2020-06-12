@@ -1,5 +1,6 @@
 ---
 name: Rwanda
+slug: rwanda
 code: RW
 ---
 

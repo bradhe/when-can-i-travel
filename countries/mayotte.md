@@ -1,5 +1,6 @@
 ---
 name: Mayotte
+slug: mayotte
 code: YT
 ---
 

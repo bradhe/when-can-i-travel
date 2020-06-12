@@ -1,5 +1,6 @@
 ---
 name: Swaziland
+slug: swaziland
 code: SZ
 ---
 

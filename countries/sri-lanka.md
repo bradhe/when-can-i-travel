@@ -1,5 +1,6 @@
 ---
 name: Sri Lanka
+slug: sri-lanka
 code: LK
 ---
 

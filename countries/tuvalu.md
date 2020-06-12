@@ -1,5 +1,6 @@
 ---
 name: Tuvalu
+slug: tuvalu
 code: TV
 ---
 

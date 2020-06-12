@@ -1,5 +1,6 @@
 ---
 name: Fiji
+slug: fiji
 code: FJ
 ---
 

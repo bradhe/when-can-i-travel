@@ -1,5 +1,6 @@
 ---
 name: Gabon
+slug: gabon
 code: GA
 ---
 

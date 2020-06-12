@@ -1,5 +1,6 @@
 ---
 name: Mexico
+slug: mexico
 code: MX
 ---
 

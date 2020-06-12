@@ -1,5 +1,6 @@
 ---
 name: Montserrat
+slug: montserrat
 code: MS
 ---
 

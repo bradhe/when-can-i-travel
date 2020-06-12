@@ -1,5 +1,6 @@
 ---
 name: Gibraltar
+slug: gibraltar
 code: GI
 ---
 

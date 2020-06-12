@@ -1,5 +1,6 @@
 ---
 name: Mali
+slug: mali
 code: ML
 ---
 

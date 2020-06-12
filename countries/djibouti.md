@@ -1,5 +1,6 @@
 ---
 name: Djibouti
+slug: djibouti
 code: DJ
 ---
 

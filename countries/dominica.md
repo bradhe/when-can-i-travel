@@ -1,5 +1,6 @@
 ---
 name: Dominica
+slug: dominica
 code: DM
 ---
 

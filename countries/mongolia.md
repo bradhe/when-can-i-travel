@@ -1,5 +1,6 @@
 ---
 name: Mongolia
+slug: mongolia
 code: MN
 ---
 

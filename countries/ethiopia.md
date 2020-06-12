@@ -1,5 +1,6 @@
 ---
 name: Ethiopia
+slug: ethiopia
 code: ET
 ---
 

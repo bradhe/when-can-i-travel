@@ -1,5 +1,6 @@
 ---
 name: Bahrain
+slug: bahrain
 code: BH
 ---
 

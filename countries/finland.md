@@ -1,5 +1,6 @@
 ---
 name: Finland
+slug: finland
 code: FI
 ---
 

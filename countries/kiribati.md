@@ -1,5 +1,6 @@
 ---
 name: Kiribati
+slug: kiribati
 code: KI
 ---
 

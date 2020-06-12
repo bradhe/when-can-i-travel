@@ -1,5 +1,6 @@
 ---
 name: Chile
+slug: chile
 code: CL
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Ukraine
+slug: ukraine
 code: UA
 ---
 

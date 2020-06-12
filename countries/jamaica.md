@@ -1,5 +1,6 @@
 ---
 name: Jamaica
+slug: jamaica
 code: JM
 ---
 

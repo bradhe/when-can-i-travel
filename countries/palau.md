@@ -1,5 +1,6 @@
 ---
 name: Palau
+slug: palau
 code: PW
 ---
 

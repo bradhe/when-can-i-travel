@@ -1,5 +1,6 @@
 ---
 name: Spain
+slug: spain
 code: ES
 ---
 

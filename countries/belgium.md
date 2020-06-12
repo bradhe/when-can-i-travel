@@ -1,5 +1,6 @@
 ---
 name: Belgium
+slug: belgium
 code: BE
 ---
 

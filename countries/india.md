@@ -1,5 +1,6 @@
 ---
 name: India
+slug: india
 code: IN
 ---
 

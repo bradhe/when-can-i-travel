@@ -1,5 +1,6 @@
 ---
 name: Yemen
+slug: yemen
 code: YE
 ---
 

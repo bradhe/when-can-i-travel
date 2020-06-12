@@ -1,5 +1,6 @@
 ---
 name: Bolivia
+slug: bolivia
 code: BO
 ---
 

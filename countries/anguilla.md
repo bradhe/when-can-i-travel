@@ -1,5 +1,6 @@
 ---
 name: Anguilla
+slug: anguilla
 code: AI
 ---
 

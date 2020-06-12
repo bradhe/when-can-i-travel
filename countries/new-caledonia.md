@@ -1,5 +1,6 @@
 ---
 name: New Caledonia
+slug: new-caledonia
 code: NC
 ---
 

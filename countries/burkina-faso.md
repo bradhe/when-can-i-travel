@@ -1,5 +1,6 @@
 ---
 name: Burkina Faso
+slug: burkina-faso
 code: BF
 ---
 

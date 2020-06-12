@@ -1,5 +1,6 @@
 ---
 name: Niger
+slug: niger
 code: NE
 ---
 

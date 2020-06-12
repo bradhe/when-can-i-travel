@@ -1,5 +1,6 @@
 ---
 name: Kenya
+slug: kenya
 code: KE
 ---
 

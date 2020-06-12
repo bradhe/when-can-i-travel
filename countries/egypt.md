@@ -1,5 +1,6 @@
 ---
 name: Egypt
+slug: egypt
 code: EG
 ---
 

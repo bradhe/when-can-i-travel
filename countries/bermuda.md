@@ -1,5 +1,6 @@
 ---
 name: Bermuda
+slug: bermuda
 code: BM
 ---
 

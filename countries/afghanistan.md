@@ -1,5 +1,6 @@
 ---
 name: Afghanistan
+slug: afghanistan
 code: AF
 ---
 

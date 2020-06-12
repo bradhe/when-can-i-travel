@@ -1,5 +1,6 @@
 ---
 name: Hong Kong
+slug: hong-kong
 code: HK
 ---
 

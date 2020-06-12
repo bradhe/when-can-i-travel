@@ -1,5 +1,6 @@
 ---
 name: Cook Islands
+slug: cook-islands
 code: CK
 ---
 

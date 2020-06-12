@@ -1,5 +1,6 @@
 ---
 name: Kosovo
+slug: kosovo
 code: KV
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Guinea
+slug: guinea
 code: GN
 ---
 

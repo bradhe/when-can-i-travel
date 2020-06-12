@@ -1,5 +1,6 @@
 ---
 name: Nicaragua
+slug: nicaragua
 code: NI
 ---
 

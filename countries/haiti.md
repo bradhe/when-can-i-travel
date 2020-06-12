@@ -1,5 +1,6 @@
 ---
 name: Haiti
+slug: haiti
 code: HT
 ---
 

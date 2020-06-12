@@ -1,5 +1,6 @@
 ---
 name: Reunion
+slug: reunion
 code: RE
 ---
 

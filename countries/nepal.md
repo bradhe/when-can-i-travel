@@ -1,5 +1,6 @@
 ---
 name: Nepal
+slug: nepal
 code: NP
 ---
 

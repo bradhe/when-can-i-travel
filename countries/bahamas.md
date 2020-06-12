@@ -1,5 +1,6 @@
 ---
 name: Bahamas
+slug: bahamas
 code: BS
 ---
 

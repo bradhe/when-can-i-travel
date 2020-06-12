@@ -1,5 +1,6 @@
 ---
 name: Marshall Islands
+slug: marshall-islands
 code: MH
 ---
 

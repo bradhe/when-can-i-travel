@@ -1,5 +1,6 @@
 ---
 name: Iceland
+slug: iceland
 code: IS
 ---
 

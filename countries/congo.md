@@ -1,5 +1,6 @@
 ---
 name: Congo
+slug: congo
 code: CG
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Colombia
+slug: colombia
 code: CO
 ---
 

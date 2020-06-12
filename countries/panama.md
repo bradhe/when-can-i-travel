@@ -1,5 +1,6 @@
 ---
 name: Panama
+slug: panama
 code: PA
 ---
 

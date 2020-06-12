@@ -1,5 +1,6 @@
 ---
 name: Paraguay
+slug: paraguay
 code: PY
 ---
 

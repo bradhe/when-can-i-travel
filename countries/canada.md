@@ -1,5 +1,6 @@
 ---
 name: Canada
+slug: canada
 code: CA
 ---
 

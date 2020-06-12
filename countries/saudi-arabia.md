@@ -1,5 +1,6 @@
 ---
 name: Saudi Arabia
+slug: saudi-arabia
 code: SA
 ---
 

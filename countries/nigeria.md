@@ -1,5 +1,6 @@
 ---
 name: Nigeria
+slug: nigeria
 code: NG
 ---
 

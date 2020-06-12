@@ -1,5 +1,6 @@
 ---
 name: Poland
+slug: poland
 code: PL
 ---
 

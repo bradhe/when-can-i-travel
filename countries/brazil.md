@@ -1,5 +1,6 @@
 ---
 name: Brazil
+slug: brazil
 code: BR
 ---
 

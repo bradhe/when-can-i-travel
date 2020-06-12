@@ -1,5 +1,6 @@
 ---
 name: Bouvet Island
+slug: bouvet-island
 code: BV
 ---
 

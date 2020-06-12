@@ -1,5 +1,6 @@
 ---
 name: Guam
+slug: guam
 code: GU
 ---
 

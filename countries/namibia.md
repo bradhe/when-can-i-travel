@@ -1,5 +1,6 @@
 ---
 name: Namibia
+slug: namibia
 code: NA
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Ghana
+slug: ghana
 code: GH
 ---
 

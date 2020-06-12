@@ -1,5 +1,6 @@
 ---
 name: Vanuatu
+slug: vanuatu
 code: VU
 ---
 

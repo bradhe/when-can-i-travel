@@ -1,5 +1,6 @@
 ---
 name: Guadeloupe
+slug: guadeloupe
 code: GP
 ---
 

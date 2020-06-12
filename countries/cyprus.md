@@ -1,5 +1,6 @@
 ---
 name: Cyprus
+slug: cyprus
 code: CY
 ---
 

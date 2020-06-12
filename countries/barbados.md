@@ -1,5 +1,6 @@
 ---
 name: Barbados
+slug: barbados
 code: BB
 ---
 

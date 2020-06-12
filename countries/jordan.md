@@ -1,5 +1,6 @@
 ---
 name: Jordan
+slug: jordan
 code: JO
 ---
 

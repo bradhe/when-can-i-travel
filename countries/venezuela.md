@@ -1,5 +1,6 @@
 ---
 name: Venezuela
+slug: venezuela
 code: VE
 ---
 

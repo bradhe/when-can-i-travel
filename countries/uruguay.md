@@ -1,5 +1,6 @@
 ---
 name: Uruguay
+slug: uruguay
 code: UY
 ---
 

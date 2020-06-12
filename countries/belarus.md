@@ -1,5 +1,6 @@
 ---
 name: Belarus
+slug: belarus
 code: BY
 ---
 

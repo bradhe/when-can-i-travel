@@ -1,5 +1,6 @@
 ---
 name: Uzbekistan
+slug: uzbekistan
 code: UZ
 ---
 

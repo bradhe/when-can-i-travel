@@ -1,5 +1,6 @@
 ---
 name: Gambia
+slug: gambia
 code: GM
 ---
 

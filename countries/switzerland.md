@@ -1,5 +1,6 @@
 ---
 name: Switzerland
+slug: switzerland
 code: CH
 ---
 

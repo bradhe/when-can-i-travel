@@ -1,5 +1,6 @@
 ---
 name: Latvia
+slug: latvia
 code: LV
 ---
 

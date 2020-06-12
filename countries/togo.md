@@ -1,5 +1,6 @@
 ---
 name: Togo
+slug: togo
 code: TG
 ---
 

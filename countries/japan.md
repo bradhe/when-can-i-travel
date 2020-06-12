@@ -1,5 +1,6 @@
 ---
 name: Japan
+slug: japan
 code: JP
 ---
 

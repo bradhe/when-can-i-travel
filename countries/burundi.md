@@ -1,5 +1,6 @@
 ---
 name: Burundi
+slug: burundi
 code: BI
 ---
 

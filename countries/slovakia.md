@@ -1,5 +1,6 @@
 ---
 name: Slovakia
+slug: slovakia
 code: SK
 ---
 

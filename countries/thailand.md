@@ -1,5 +1,6 @@
 ---
 name: Thailand
+slug: thailand
 code: TH
 ---
 

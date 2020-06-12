@@ -1,5 +1,6 @@
 ---
 name: Mauritius
+slug: mauritius
 code: MU
 ---
 

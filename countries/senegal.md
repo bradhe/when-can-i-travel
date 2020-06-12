@@ -1,5 +1,6 @@
 ---
 name: Senegal
+slug: senegal
 code: SN
 ---
 

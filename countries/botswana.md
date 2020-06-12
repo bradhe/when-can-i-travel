@@ -1,5 +1,6 @@
 ---
 name: Botswana
+slug: botswana
 code: BW
 ---
 

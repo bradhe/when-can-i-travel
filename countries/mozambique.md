@@ -1,5 +1,6 @@
 ---
 name: Mozambique
+slug: mozambique
 code: MZ
 ---
 

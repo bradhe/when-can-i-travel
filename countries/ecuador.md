@@ -1,5 +1,6 @@
 ---
 name: Ecuador
+slug: ecuador
 code: EC
 ---
 

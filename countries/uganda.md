@@ -1,5 +1,6 @@
 ---
 name: Uganda
+slug: uganda
 code: UG
 ---
 

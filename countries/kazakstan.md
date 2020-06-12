@@ -1,5 +1,6 @@
 ---
 name: Kazakstan
+slug: kazakstan
 code: KZ
 ---
 

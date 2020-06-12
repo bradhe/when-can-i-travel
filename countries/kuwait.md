@@ -1,5 +1,6 @@
 ---
 name: Kuwait
+slug: kuwait
 code: KW
 ---
 

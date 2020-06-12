@@ -1,5 +1,6 @@
 ---
 name: Montenegro
+slug: montenegro
 code: ME
 ---
 

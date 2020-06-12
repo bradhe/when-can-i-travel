@@ -1,5 +1,6 @@
 ---
 name: Oman
+slug: oman
 code: OM
 ---
 

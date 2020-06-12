@@ -1,5 +1,6 @@
 ---
 name: Seychelles
+slug: seychelles
 code: SC
 ---
 

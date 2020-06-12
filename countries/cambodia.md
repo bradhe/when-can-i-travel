@@ -1,5 +1,6 @@
 ---
 name: Cambodia
+slug: cambodia
 code: KH
 ---
 

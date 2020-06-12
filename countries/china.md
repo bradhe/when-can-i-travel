@@ -1,5 +1,6 @@
 ---
 name: China
+slug: china
 code: CN
 ---
 

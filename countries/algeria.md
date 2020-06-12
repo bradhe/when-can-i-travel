@@ -1,5 +1,6 @@
 ---
 name: Algeria
+slug: algeria
 code: DZ
 ---
 

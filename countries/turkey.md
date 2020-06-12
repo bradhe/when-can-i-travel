@@ -1,5 +1,6 @@
 ---
 name: Turkey
+slug: turkey
 code: TR
 ---
 

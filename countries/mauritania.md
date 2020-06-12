@@ -1,5 +1,6 @@
 ---
 name: Mauritania
+slug: mauritania
 code: MR
 ---
 

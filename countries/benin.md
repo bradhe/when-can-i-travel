@@ -1,5 +1,6 @@
 ---
 name: Benin
+slug: benin
 code: BJ
 ---
 

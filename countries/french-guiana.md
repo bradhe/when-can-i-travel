@@ -1,5 +1,6 @@
 ---
 name: French Guiana
+slug: french-guiana
 code: GF
 ---
 

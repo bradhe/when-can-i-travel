@@ -1,5 +1,6 @@
 ---
 name: Iraq
+slug: iraq
 code: IQ
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Tokelau
+slug: tokelau
 code: TK
 ---
 

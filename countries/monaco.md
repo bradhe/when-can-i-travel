@@ -1,5 +1,6 @@
 ---
 name: Monaco
+slug: monaco
 code: MC
 ---
 

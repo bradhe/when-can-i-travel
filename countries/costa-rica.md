@@ -1,5 +1,6 @@
 ---
 name: Costa Rica
+slug: costa-rica
 code: CR
 ---
 

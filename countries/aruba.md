@@ -1,5 +1,6 @@
 ---
 name: Aruba
+slug: aruba
 code: AW
 ---
 

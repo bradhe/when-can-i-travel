@@ -1,6 +1,7 @@
 ---
 name: Norway
-code: false
+slug: norway
+code: "NO"
 ---
 
 _TODO_

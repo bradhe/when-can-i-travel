@@ -1,5 +1,6 @@
 ---
 name: Cameroon
+slug: cameroon
 code: CM
 ---
 

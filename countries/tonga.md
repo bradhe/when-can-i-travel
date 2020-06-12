@@ -1,5 +1,6 @@
 ---
 name: Tonga
+slug: tonga
 code: TO
 ---
 

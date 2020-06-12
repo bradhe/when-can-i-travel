@@ -1,5 +1,6 @@
 ---
 name: Eritrea
+slug: eritrea
 code: ER
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Macau
+slug: macau
 code: MO
 ---
 

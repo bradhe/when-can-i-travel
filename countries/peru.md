@@ -1,5 +1,6 @@
 ---
 name: Peru
+slug: peru
 code: PE
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Zambia
+slug: zambia
 code: ZM
 ---
 

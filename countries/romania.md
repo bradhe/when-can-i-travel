@@ -1,5 +1,6 @@
 ---
 name: Romania
+slug: romania
 code: RO
 ---
 

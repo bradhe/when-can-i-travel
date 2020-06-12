@@ -1,5 +1,6 @@
 ---
 name: Portugal
+slug: portugal
 code: PT
 ---
 

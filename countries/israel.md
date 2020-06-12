@@ -1,5 +1,6 @@
 ---
 name: Israel
+slug: israel
 code: IL
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: Netherlands
+slug: netherlands
 code: NL
 ---
 

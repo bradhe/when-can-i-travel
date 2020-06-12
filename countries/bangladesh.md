@@ -1,5 +1,6 @@
 ---
 name: Bangladesh
+slug: bangladesh
 code: BD
 ---
 

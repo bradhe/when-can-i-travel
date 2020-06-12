@@ -1,5 +1,6 @@
 ---
 name: Myanmar
+slug: myanmar
 code: MM
 ---
 

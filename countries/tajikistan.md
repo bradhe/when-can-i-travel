@@ -1,5 +1,6 @@
 ---
 name: Tajikistan
+slug: tajikistan
 code: TJ
 ---
 

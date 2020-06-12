@@ -1,5 +1,6 @@
 ---
 name: Denmark
+slug: denmark
 code: DK
 ---
 
