@@ -15,7 +15,7 @@ if [ -z "${AWS_BUCKET}" ]; then
 fi
 
 if ! [ -x "$(command -v aws)" ]; then
-	apt-get install awscli
+	sudo apt-get install awscli
 fi
 
 aws s3 sync ${BASEDIR}/_site/public s3://$AWS_BUCKET
