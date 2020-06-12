@@ -1,0 +1,111 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Web app bucket
+
+Parameters:
+  Environment:
+    Description: Name of the environment to assign to tags.
+    Type: String
+    Default: production
+  HostedZone:
+    Description: Hosted zone that you want this content to live under.
+    Type: String
+    Default: when-can-i-travel.com
+  CertificateARN:
+    Description: The AWS ACM certificate ARN to use for the distribution.
+    Type: String
+
+Resources:
+  #
+  # S3 
+  #
+  Bucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
+    Properties:
+      BucketName: !Ref AWS::StackName
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: index.html
+
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    DependsOn: Bucket
+    Properties:
+      Bucket: !Ref Bucket
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action:
+              - 's3:GetObject'
+            Resource:
+              - !Sub "${Bucket.Arn}/*"
+              - !GetAtt Bucket.Arn
+            Principal:
+              CanonicalUser: !GetAtt OriginAccessIdentity.S3CanonicalUserId
+
+  #
+  # CloudFront
+  #
+  OriginAccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig: 
+        Comment: !Sub "${AWS::StackName} Origin Access Identitiy"
+
+  Distribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !Sub "${AWS::StackName}.${HostedZone}"
+          - !Sub "${HostedZone}"
+          - !Sub "www.${HostedZone}"
+        Origins:
+          - Id: DefaultOrigin
+            DomainName: !GetAtt Bucket.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub "origin-access-identity/cloudfront/${OriginAccessIdentity}"
+        Enabled: true
+        DefaultRootObject: index.html
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: /404.html
+        DefaultCacheBehavior:
+          AllowedMethods: 
+            - GET
+            - HEAD
+            - OPTIONS
+          Compress: true
+          ForwardedValues:
+            QueryString: true
+            Cookies: 
+              Forward: none
+          TargetOriginId: DefaultOrigin
+          ViewerProtocolPolicy: redirect-to-https
+        HttpVersion: http2
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: !Ref CertificateARN
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: "TLSv1.2_2018"
+      Tags:
+        - Key: Environment
+          Value: !Ref Environment
+        - Key: Stack-Type
+          Value: when-can-i-travel
+
+  #
+  # Route53
+  #
+  DNSRecord:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneName: !Sub "${HostedZone}."
+      RecordSets:
+        - Name: !Sub "${AWS::StackName}.${HostedZone}"
+          Type: A
+          AliasTarget:
+            HostedZoneId: Z2FDTNDATAQYW2
+            DNSName: !GetAtt Distribution.DomainName
