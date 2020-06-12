@@ -9,21 +9,31 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const result = await graphql(`
-    query {
-      allCountriesYaml {
+    query GetCountryPages {
+      allMarkdownRemark {
         nodes {
-          code
+          frontmatter {
+            code
+            name
+            slug
+          }
         }
       }
     }
   `);
 
-  result.data.allCountriesYaml.nodes.forEach((data) => {
+  const pages = result.data.allMarkdownRemark.nodes;
+
+  pages.forEach((page) => {
+    const { frontmatter } = page;
+
     createPage({
-      path: '/to/' + data.code,
+      path: '/to/' + frontmatter.slug,
       component: path.resolve(`./src/templates/country.js`),
       context: {
-        countryCode: data.code,
+        slug: frontmatter.slug,
+        countryName: frontmatter.name,
+        countryCode: frontmatter.code,
       },
     });
   });

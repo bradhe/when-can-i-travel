@@ -1,21 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 import Layout from "../components/layout"
+import PageTitle from "../components/PageTitle"
+import WorldMap from "../components/WorldMap"
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+const onMapClick = (page) => {
+  const { frontmatter } = page;
+  const url = "/to/" + frontmatter.slug;
+  navigate(url);
+};
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi </h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+
+    <div className="row">
+      <div className="col">
+        <PageTitle>Where would you like to go?</PageTitle>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+
+    <div className="row">
+      <div className="col">
+        <WorldMap onCountryClick={onMapClick} />
+      </div>
+    </div>
   </Layout>
 )
 
