@@ -1,6 +1,4 @@
 ---
-name: Togo
-slug: togo
 code: TG
 status: unknown
 timeline:

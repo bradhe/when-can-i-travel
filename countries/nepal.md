@@ -1,6 +1,4 @@
 ---
-name: Nepal
-slug: nepal
 code: NP
 status: unknown
 timeline:

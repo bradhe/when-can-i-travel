@@ -1,6 +1,4 @@
 ---
-name: Solomon Islands
-slug: solomon-islands
 code: SB
 status: unknown
 timeline:

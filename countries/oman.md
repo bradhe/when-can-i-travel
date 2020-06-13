@@ -1,6 +1,4 @@
 ---
-name: Oman
-slug: oman
 code: OM
 status: unknown
 timeline:

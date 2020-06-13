@@ -1,6 +1,4 @@
 ---
-name: Pitcairn
-slug: pitcairn
 code: PN
 status: unknown
 timeline:

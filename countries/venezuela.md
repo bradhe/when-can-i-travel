@@ -1,6 +1,4 @@
 ---
-name: Venezuela
-slug: venezuela
 code: VE
 status: unknown
 timeline:

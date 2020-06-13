@@ -4,3 +4,5 @@ name: Colombia
 origin:
   lat: 4.570868
   lon: -74.297333
+slug: colombia
+continent: SA

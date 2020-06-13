@@ -1,6 +1,4 @@
 ---
-name: Cambodia
-slug: cambodia
 code: KH
 status: unknown
 timeline:

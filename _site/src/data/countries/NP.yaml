@@ -4,3 +4,5 @@ name: Nepal
 origin:
   lat: 28.394857
   lon: 84.124008
+slug: nepal
+continent: AS

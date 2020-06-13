@@ -1,6 +1,4 @@
 ---
-name: Ukraine
-slug: ukraine
 code: UA
 status: unknown
 timeline:

@@ -11,6 +11,7 @@ query GetCountryData($countryCode: String) {
     nodes {
       code
       name
+      slug
       origin {
         lat
         lon
@@ -21,8 +22,6 @@ query GetCountryData($countryCode: String) {
     nodes {
       frontmatter {
         code
-        name
-        slug
       }
       html
     }
@@ -58,7 +57,7 @@ const Country = ({ pageContext, data }) => {
     <Layout>
       <div className="row">
         <div className="col">
-          <PageTitle>When can I travel to {page.frontmatter.name}?</PageTitle>
+          <PageTitle>When can I travel to {country.name}?</PageTitle>
         </div>
       </div>
 

@@ -1,6 +1,4 @@
 ---
-name: Ecuador
-slug: ecuador
 code: EC
 status: unknown
 timeline:

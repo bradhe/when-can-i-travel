@@ -4,3 +4,5 @@ name: Bouvet Island
 origin:
   lat: -54.423199
   lon: 3.413194
+slug: bouvet-island
+continent: AN

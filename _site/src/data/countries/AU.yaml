@@ -4,3 +4,5 @@ name: Australia
 origin:
   lat: -25.274398
   lon: 133.775136
+slug: australia
+continent: OC

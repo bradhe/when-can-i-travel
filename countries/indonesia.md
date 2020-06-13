@@ -1,6 +1,4 @@
 ---
-name: Indonesia
-slug: indonesia
 code: ID
 status: unknown
 timeline:

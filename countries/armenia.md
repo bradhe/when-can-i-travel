@@ -1,6 +1,4 @@
 ---
-name: Armenia
-slug: armenia
 code: AM
 status: unknown
 timeline:

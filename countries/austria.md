@@ -1,6 +1,4 @@
 ---
-name: Austria
-slug: austria
 code: AT
 status: unknown
 timeline:

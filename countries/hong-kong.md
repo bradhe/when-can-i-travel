@@ -1,6 +1,4 @@
 ---
-name: Hong Kong
-slug: hong-kong
 code: HK
 status: unknown
 timeline:

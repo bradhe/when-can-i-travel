@@ -4,3 +4,5 @@ name: United Kingdom
 origin:
   lat: 55.378051
   lon: -3.435973
+slug: united-kingdom
+continent: EU

@@ -1,6 +1,4 @@
 ---
-name: Bouvet Island
-slug: bouvet-island
 code: BV
 status: unknown
 timeline:

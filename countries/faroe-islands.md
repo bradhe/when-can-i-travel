@@ -1,6 +1,4 @@
 ---
-name: Faroe Islands
-slug: faroe-islands
 code: FO
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Singapore
-slug: singapore
 code: SG
 status: unknown
 timeline:

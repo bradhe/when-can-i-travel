@@ -5,6 +5,8 @@
  */
 const path = require('path');
 
+const findCountry = (data, code) => data.filter((row) => row.code === code)[0];
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -14,9 +16,14 @@ exports.createPages = async ({ graphql, actions }) => {
         nodes {
           frontmatter {
             code
-            name
-            slug
           }
+        }
+      }
+      allCountriesYaml {
+        nodes {
+          name
+          slug
+          code
         }
       }
     }
@@ -24,16 +31,19 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const pages = result.data.allMarkdownRemark.nodes;
 
+  const countries = result.data.allCountriesYaml.nodes;
+
   pages.forEach((page) => {
-    const { frontmatter } = page;
+    const country = findCountry(countries, page.frontmatter.code);
+    console.log('* generating page for ', page.frontmatter.code);
 
     createPage({
-      path: '/to/' + frontmatter.slug,
+      path: '/to/' + country.slug,
       component: path.resolve(`./src/templates/country.js`),
       context: {
-        slug: frontmatter.slug,
-        countryName: frontmatter.name,
-        countryCode: frontmatter.code,
+        slug: country.slug,
+        countryName: country.name,
+        countryCode: country.code,
       },
     });
   });

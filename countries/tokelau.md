@@ -1,6 +1,4 @@
 ---
-name: Tokelau
-slug: tokelau
 code: TK
 status: unknown
 timeline:

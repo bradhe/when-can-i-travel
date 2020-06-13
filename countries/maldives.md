@@ -1,6 +1,4 @@
 ---
-name: Maldives
-slug: maldives
 code: MV
 status: unknown
 timeline:

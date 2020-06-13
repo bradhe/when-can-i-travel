@@ -1,6 +1,4 @@
 ---
-name: Kosovo
-slug: kosovo
 code: KV
 status: unknown
 timeline:

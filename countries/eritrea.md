@@ -1,6 +1,4 @@
 ---
-name: Eritrea
-slug: eritrea
 code: ER
 status: unknown
 timeline:

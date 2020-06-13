@@ -1,6 +1,4 @@
 ---
-name: Namibia
-slug: namibia
 code: NA
 status: unknown
 timeline:

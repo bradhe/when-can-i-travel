@@ -1,6 +1,4 @@
 ---
-name: Dominica
-slug: dominica
 code: DM
 status: unknown
 timeline:

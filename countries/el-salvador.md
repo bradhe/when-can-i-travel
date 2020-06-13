@@ -1,6 +1,4 @@
 ---
-name: El Salvador
-slug: el-salvador
 code: SV
 status: unknown
 timeline:

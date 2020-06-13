@@ -1,6 +1,4 @@
 ---
-name: Serbia
-slug: serbia
 code: RS
 status: unknown
 timeline:

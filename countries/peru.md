@@ -1,6 +1,4 @@
 ---
-name: Peru
-slug: peru
 code: PE
 status: unknown
 timeline:

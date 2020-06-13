@@ -1,6 +1,4 @@
 ---
-name: Colombia
-slug: colombia
 code: CO
 status: unknown
 timeline:

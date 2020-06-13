@@ -4,3 +4,5 @@ name: Puerto Rico
 origin:
   lat: 18.220833
   lon: -66.590149
+slug: puerto-rico
+continent: NA

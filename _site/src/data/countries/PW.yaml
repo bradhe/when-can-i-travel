@@ -4,3 +4,5 @@ name: Palau
 origin:
   lat: 7.51498
   lon: 134.58252
+slug: palau
+continent: OC

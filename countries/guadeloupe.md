@@ -1,6 +1,4 @@
 ---
-name: Guadeloupe
-slug: guadeloupe
 code: GP
 status: unknown
 timeline:

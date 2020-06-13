@@ -1,6 +1,4 @@
 ---
-name: Netherlands Antilles
-slug: netherlands-antilles
 code: AN
 status: unknown
 timeline:

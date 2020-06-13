@@ -1,6 +1,4 @@
 ---
-name: Martinique
-slug: martinique
 code: MQ
 status: unknown
 timeline:

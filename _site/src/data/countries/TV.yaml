@@ -4,3 +4,5 @@ name: Tuvalu
 origin:
   lat: -7.109535
   lon: 177.64933
+slug: tuvalu
+continent: OC

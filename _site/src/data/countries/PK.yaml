@@ -4,3 +4,5 @@ name: Pakistan
 origin:
   lat: 30.375321
   lon: 69.345116
+slug: pakistan
+continent: AS

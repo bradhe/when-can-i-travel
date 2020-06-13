@@ -4,3 +4,5 @@ name: Cook Islands
 origin:
   lat: -21.236736
   lon: -159.777671
+slug: cook-islands
+continent: OC

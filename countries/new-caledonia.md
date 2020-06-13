@@ -1,6 +1,4 @@
 ---
-name: New Caledonia
-slug: new-caledonia
 code: NC
 status: unknown
 timeline:

@@ -36,10 +36,9 @@ const renderGeography = (onClick) => {
 };
 
 const findCountry = (data, code) => {
-  const pages = data.allMarkdownRemark.nodes;
-  const filtered = pages.filter((page) => {
-    const { frontmatter } = page;
-    return frontmatter.code === code;
+  const countries = data.allCountriesYaml.nodes;
+  const filtered = countries.filter((country) => {
+    return country.code === code;
   });
 
   return filtered.length ? filtered[0] : null;
@@ -78,9 +77,14 @@ const WorldMap = ({ onCountryClick, ...props }) => {
           nodes {
             frontmatter {
               code
-              name
-              slug
             }
+          }
+        }
+        allCountriesYaml {
+          nodes {
+            name
+            code
+            slug
           }
         }
       }

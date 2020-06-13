@@ -1,6 +1,4 @@
 ---
-name: Costa Rica
-slug: costa-rica
 code: CR
 status: unknown
 timeline:

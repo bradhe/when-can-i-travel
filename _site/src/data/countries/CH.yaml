@@ -4,3 +4,5 @@ name: Switzerland
 origin:
   lat: 46.818188
   lon: 8.227512
+slug: switzerland
+continent: EU

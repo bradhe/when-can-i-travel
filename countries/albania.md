@@ -1,6 +1,4 @@
 ---
-name: Albania
-slug: albania
 code: AL
 status: unknown
 timeline:

@@ -4,3 +4,5 @@ name: Gibraltar
 origin:
   lat: 36.137741
   lon: -5.345374
+slug: gibraltar
+continent: EU

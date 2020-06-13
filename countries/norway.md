@@ -1,6 +1,4 @@
 ---
-name: Norway
-slug: norway
 code: 'NO'
 status: unknown
 timeline:

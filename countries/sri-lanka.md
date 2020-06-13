@@ -1,6 +1,4 @@
 ---
-name: Sri Lanka
-slug: sri-lanka
 code: LK
 status: unknown
 timeline:

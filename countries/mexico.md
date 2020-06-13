@@ -1,6 +1,4 @@
 ---
-name: Mexico
-slug: mexico
 code: MX
 status: unknown
 timeline:

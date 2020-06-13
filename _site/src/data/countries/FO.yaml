@@ -4,3 +4,5 @@ name: Faroe Islands
 origin:
   lat: 61.892635
   lon: -6.911806
+slug: faroe-islands
+continent: EU

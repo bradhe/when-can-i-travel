@@ -1,6 +1,4 @@
 ---
-name: Anguilla
-slug: anguilla
 code: AI
 status: unknown
 timeline:

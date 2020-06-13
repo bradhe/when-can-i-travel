@@ -1,6 +1,4 @@
 ---
-name: Mayotte
-slug: mayotte
 code: YT
 status: unknown
 timeline:

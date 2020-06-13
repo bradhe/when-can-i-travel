@@ -1,6 +1,4 @@
 ---
-name: Malaysia
-slug: malaysia
 code: MY
 status: unknown
 timeline:

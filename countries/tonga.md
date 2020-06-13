@@ -1,6 +1,4 @@
 ---
-name: Tonga
-slug: tonga
 code: TO
 status: unknown
 timeline:

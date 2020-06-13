@@ -1,6 +1,4 @@
 ---
-name: Australia
-slug: australia
 code: AU
 status: unknown
 timeline:

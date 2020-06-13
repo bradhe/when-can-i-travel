@@ -1,6 +1,4 @@
 ---
-name: Bangladesh
-slug: bangladesh
 code: BD
 status: unknown
 timeline:

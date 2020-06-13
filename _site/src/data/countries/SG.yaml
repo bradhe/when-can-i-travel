@@ -4,3 +4,5 @@ name: Singapore
 origin:
   lat: 1.352083
   lon: 103.819836
+slug: singapore
+continent: AS

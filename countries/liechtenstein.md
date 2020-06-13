@@ -1,6 +1,4 @@
 ---
-name: Liechtenstein
-slug: liechtenstein
 code: LI
 status: unknown
 timeline:

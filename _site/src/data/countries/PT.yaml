@@ -4,3 +4,5 @@ name: Portugal
 origin:
   lat: 39.399872
   lon: -8.224454
+slug: portugal
+continent: EU

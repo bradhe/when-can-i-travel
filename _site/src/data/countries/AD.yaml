@@ -4,3 +4,5 @@ name: Andorra
 origin:
   lat: 42.546245
   lon: 1.601554
+slug: andorra
+continent: EU

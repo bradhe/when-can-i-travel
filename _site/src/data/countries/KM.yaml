@@ -4,3 +4,5 @@ name: Comoros
 origin:
   lat: -11.875001
   lon: 43.872219
+slug: comoros
+continent: AF

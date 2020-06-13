@@ -4,3 +4,5 @@ name: Ireland
 origin:
   lat: 53.41291
   lon: -8.24389
+slug: ireland
+continent: EU

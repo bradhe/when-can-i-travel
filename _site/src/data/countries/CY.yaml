@@ -4,3 +4,5 @@ name: Cyprus
 origin:
   lat: 35.126413
   lon: 33.429859
+slug: cyprus
+continent: EU

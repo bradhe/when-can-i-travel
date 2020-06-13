@@ -1,6 +1,4 @@
 ---
-name: United States
-slug: united-states
 code: US
 status: unknown
 timeline:

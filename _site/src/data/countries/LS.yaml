@@ -4,3 +4,5 @@ name: Lesotho
 origin:
   lat: -29.609988
   lon: 28.233608
+slug: lesotho
+continent: AF

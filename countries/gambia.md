@@ -1,6 +1,4 @@
 ---
-name: Gambia
-slug: gambia
 code: GM
 status: unknown
 timeline:

@@ -4,3 +4,5 @@ name: Reunion
 origin:
   lat: -21.115141
   lon: 55.536384
+slug: reunion
+continent: AF

@@ -1,6 +1,4 @@
 ---
-name: Ghana
-slug: ghana
 code: GH
 status: unknown
 timeline:

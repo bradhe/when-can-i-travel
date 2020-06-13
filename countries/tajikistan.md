@@ -1,6 +1,4 @@
 ---
-name: Tajikistan
-slug: tajikistan
 code: TJ
 status: unknown
 timeline:

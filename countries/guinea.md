@@ -1,6 +1,4 @@
 ---
-name: Guinea
-slug: guinea
 code: GN
 status: unknown
 timeline:

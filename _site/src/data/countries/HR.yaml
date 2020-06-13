@@ -4,3 +4,5 @@ name: Croatia
 origin:
   lat: 45.1
   lon: 15.2
+slug: croatia
+continent: EU

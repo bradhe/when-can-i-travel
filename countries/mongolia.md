@@ -1,6 +1,4 @@
 ---
-name: Mongolia
-slug: mongolia
 code: MN
 status: unknown
 timeline:

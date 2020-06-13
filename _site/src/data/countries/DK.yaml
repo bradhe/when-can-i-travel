@@ -4,3 +4,5 @@ name: Denmark
 origin:
   lat: 56.26392
   lon: 9.501785
+slug: denmark
+continent: EU

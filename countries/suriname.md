@@ -1,6 +1,4 @@
 ---
-name: Suriname
-slug: suriname
 code: SR
 status: unknown
 timeline:

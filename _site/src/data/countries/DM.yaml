@@ -4,3 +4,5 @@ name: Dominica
 origin:
   lat: 15.414999
   lon: -61.370976
+slug: dominica
+continent: NA

@@ -4,3 +4,5 @@ name: Nigeria
 origin:
   lat: 9.081999
   lon: 8.675277
+slug: nigeria
+continent: AF

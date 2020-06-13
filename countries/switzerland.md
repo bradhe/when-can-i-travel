@@ -1,6 +1,4 @@
 ---
-name: Switzerland
-slug: switzerland
 code: CH
 status: unknown
 timeline:

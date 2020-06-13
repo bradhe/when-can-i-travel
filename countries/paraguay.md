@@ -1,6 +1,4 @@
 ---
-name: Paraguay
-slug: paraguay
 code: PY
 status: unknown
 timeline:

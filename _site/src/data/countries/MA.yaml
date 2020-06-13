@@ -4,3 +4,5 @@ name: Morocco
 origin:
   lat: 31.791702
   lon: -7.09262
+slug: morocco
+continent: AF

@@ -4,3 +4,5 @@ name: Aruba
 origin:
   lat: 12.52111
   lon: -69.968338
+slug: aruba
+continent: NA

@@ -1,6 +1,4 @@
 ---
-name: Spain
-slug: spain
 code: ES
 status: unknown
 timeline:

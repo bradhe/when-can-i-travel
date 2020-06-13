@@ -1,6 +1,4 @@
 ---
-name: Israel
-slug: israel
 code: IL
 status: unknown
 timeline:

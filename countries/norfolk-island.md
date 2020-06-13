@@ -1,6 +1,4 @@
 ---
-name: Norfolk Island
-slug: norfolk-island
 code: NF
 status: unknown
 timeline:

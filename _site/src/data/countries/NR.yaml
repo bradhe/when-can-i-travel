@@ -4,3 +4,5 @@ name: Nauru
 origin:
   lat: -0.522778
   lon: 166.931503
+slug: nauru
+continent: OC

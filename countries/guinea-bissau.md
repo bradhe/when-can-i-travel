@@ -1,6 +1,4 @@
 ---
-name: Guinea-bissau
-slug: guinea-bissau
 code: GW
 status: unknown
 timeline:

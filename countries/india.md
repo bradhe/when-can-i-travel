@@ -1,6 +1,4 @@
 ---
-name: India
-slug: india
 code: IN
 status: unknown
 timeline:

@@ -4,3 +4,5 @@ name: Burundi
 origin:
   lat: -3.373056
   lon: 29.918886
+slug: burundi
+continent: AF

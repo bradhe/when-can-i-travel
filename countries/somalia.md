@@ -1,6 +1,4 @@
 ---
-name: Somalia
-slug: somalia
 code: SO
 status: unknown
 timeline:

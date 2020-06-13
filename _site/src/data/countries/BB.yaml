@@ -4,3 +4,5 @@ name: Barbados
 origin:
   lat: 13.193887
   lon: -59.543198
+slug: barbados
+continent: NA

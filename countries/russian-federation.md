@@ -1,6 +1,4 @@
 ---
-name: Russian Federation
-slug: russian-federation
 code: RU
 status: unknown
 timeline:

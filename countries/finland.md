@@ -1,6 +1,4 @@
 ---
-name: Finland
-slug: finland
 code: FI
 status: unknown
 timeline:

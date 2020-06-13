@@ -1,6 +1,4 @@
 ---
-name: Algeria
-slug: algeria
 code: DZ
 status: unknown
 timeline:

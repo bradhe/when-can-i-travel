@@ -4,3 +4,5 @@ name: Luxembourg
 origin:
   lat: 49.815273
   lon: 6.129583
+slug: luxembourg
+continent: EU

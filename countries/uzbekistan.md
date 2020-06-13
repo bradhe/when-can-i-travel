@@ -1,6 +1,4 @@
 ---
-name: Uzbekistan
-slug: uzbekistan
 code: UZ
 status: unknown
 timeline:

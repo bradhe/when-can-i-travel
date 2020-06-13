@@ -1,6 +1,4 @@
 ---
-name: Mauritania
-slug: mauritania
 code: MR
 status: unknown
 timeline:

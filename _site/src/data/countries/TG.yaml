@@ -4,3 +4,5 @@ name: Togo
 origin:
   lat: 8.619543
   lon: 0.824782
+slug: togo
+continent: AF

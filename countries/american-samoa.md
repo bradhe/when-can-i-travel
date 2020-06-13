@@ -1,6 +1,4 @@
 ---
-name: American Samoa
-slug: american-samoa
 code: AS
 status: unknown
 timeline:

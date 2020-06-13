@@ -1,6 +1,4 @@
 ---
-name: Benin
-slug: benin
 code: BJ
 status: unknown
 timeline:

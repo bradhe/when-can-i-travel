@@ -4,3 +4,5 @@ name: Western Sahara
 origin:
   lat: 24.215527
   lon: -12.885834
+slug: western-sahara
+continent: AF

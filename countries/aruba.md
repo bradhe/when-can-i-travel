@@ -1,6 +1,4 @@
 ---
-name: Aruba
-slug: aruba
 code: AW
 status: unknown
 timeline:

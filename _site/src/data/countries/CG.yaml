@@ -4,3 +4,5 @@ name: Congo
 origin:
   lat: -0.228021
   lon: 15.827659
+slug: congo
+continent: AF

@@ -1,6 +1,4 @@
 ---
-name: Sierra Leone
-slug: sierra-leone
 code: SL
 status: unknown
 timeline:

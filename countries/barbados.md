@@ -1,6 +1,4 @@
 ---
-name: Barbados
-slug: barbados
 code: BB
 status: unknown
 timeline:

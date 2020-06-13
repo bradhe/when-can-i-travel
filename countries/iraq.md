@@ -1,6 +1,4 @@
 ---
-name: Iraq
-slug: iraq
 code: IQ
 status: unknown
 timeline:

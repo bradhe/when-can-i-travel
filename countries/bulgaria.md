@@ -1,6 +1,4 @@
 ---
-name: Bulgaria
-slug: bulgaria
 code: BG
 status: unknown
 timeline:

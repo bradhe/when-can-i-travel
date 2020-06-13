@@ -4,3 +4,5 @@ name: Madagascar
 origin:
   lat: -18.766947
   lon: 46.869107
+slug: madagascar
+continent: AF

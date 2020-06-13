@@ -1,6 +1,4 @@
 ---
-name: Morocco
-slug: morocco
 code: MA
 status: unknown
 timeline:

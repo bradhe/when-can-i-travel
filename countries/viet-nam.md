@@ -1,6 +1,4 @@
 ---
-name: Viet Nam
-slug: viet-nam
 code: VN
 status: unknown
 timeline:

@@ -4,3 +4,5 @@ name: Svalbard And Jan Mayen
 origin:
   lat: 77.553604
   lon: 23.670272
+slug: svalbard-and-jan-mayen
+continent: EU

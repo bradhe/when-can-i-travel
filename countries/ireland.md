@@ -1,6 +1,4 @@
 ---
-name: Ireland
-slug: ireland
 code: IE
 status: unknown
 timeline:

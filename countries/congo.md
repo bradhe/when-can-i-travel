@@ -1,6 +1,4 @@
 ---
-name: Congo
-slug: congo
 code: CG
 status: unknown
 timeline:

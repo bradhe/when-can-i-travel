@@ -1,6 +1,4 @@
 ---
-name: Montenegro
-slug: montenegro
 code: ME
 status: unknown
 timeline:

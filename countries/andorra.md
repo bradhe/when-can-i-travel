@@ -1,6 +1,4 @@
 ---
-name: Andorra
-slug: andorra
 code: AD
 status: unknown
 timeline:

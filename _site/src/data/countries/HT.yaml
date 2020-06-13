@@ -4,3 +4,5 @@ name: Haiti
 origin:
   lat: 18.971187
   lon: -72.285215
+slug: haiti
+continent: NA

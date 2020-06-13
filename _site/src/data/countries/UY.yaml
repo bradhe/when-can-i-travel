@@ -4,3 +4,5 @@ name: Uruguay
 origin:
   lat: -32.522779
   lon: -55.765835
+slug: uruguay
+continent: SA

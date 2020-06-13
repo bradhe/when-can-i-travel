@@ -4,3 +4,5 @@ name: Latvia
 origin:
   lat: 56.879635
   lon: 24.603189
+slug: latvia
+continent: EU

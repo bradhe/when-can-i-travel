@@ -1,6 +1,4 @@
 ---
-name: Lebanon
-slug: lebanon
 code: LB
 status: unknown
 timeline:

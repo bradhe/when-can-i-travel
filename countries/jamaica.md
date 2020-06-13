@@ -1,6 +1,4 @@
 ---
-name: Jamaica
-slug: jamaica
 code: JM
 status: unknown
 timeline:

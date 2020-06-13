@@ -4,3 +4,5 @@ name: Guinea
 origin:
   lat: 9.945587
   lon: -9.696645
+slug: guinea
+continent: AF

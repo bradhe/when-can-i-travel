@@ -1,6 +1,4 @@
 ---
-name: Panama
-slug: panama
 code: PA
 status: unknown
 timeline:

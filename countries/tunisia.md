@@ -1,6 +1,4 @@
 ---
-name: Tunisia
-slug: tunisia
 code: TN
 status: unknown
 timeline:

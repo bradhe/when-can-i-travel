@@ -1,6 +1,4 @@
 ---
-name: Montserrat
-slug: montserrat
 code: MS
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Falkland Islands (malvinas)
-slug: falkland-islands-malvinas-
 code: FK
 status: unknown
 timeline:

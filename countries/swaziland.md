@@ -1,6 +1,4 @@
 ---
-name: Swaziland
-slug: swaziland
 code: SZ
 status: unknown
 timeline:

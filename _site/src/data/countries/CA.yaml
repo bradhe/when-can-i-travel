@@ -4,3 +4,5 @@ name: Canada
 origin:
   lat: 56.130366
   lon: -106.346771
+slug: canada
+continent: NA

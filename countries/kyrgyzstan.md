@@ -1,6 +1,4 @@
 ---
-name: Kyrgyzstan
-slug: kyrgyzstan
 code: KG
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Nauru
-slug: nauru
 code: NR
 status: unknown
 timeline:

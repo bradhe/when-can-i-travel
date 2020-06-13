@@ -1,6 +1,4 @@
 ---
-name: Romania
-slug: romania
 code: RO
 status: unknown
 timeline:

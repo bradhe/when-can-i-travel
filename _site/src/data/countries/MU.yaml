@@ -4,3 +4,5 @@ name: Mauritius
 origin:
   lat: -20.348404
   lon: 57.552152
+slug: mauritius
+continent: AF

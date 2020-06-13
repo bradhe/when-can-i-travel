@@ -4,3 +4,5 @@ name: Nicaragua
 origin:
   lat: 12.865416
   lon: -85.207229
+slug: nicaragua
+continent: NA

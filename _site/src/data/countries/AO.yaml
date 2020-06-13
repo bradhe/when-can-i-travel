@@ -4,3 +4,5 @@ name: Angola
 origin:
   lat: -11.202692
   lon: 17.873887
+slug: angola
+continent: AF

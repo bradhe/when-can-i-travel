@@ -1,6 +1,4 @@
 ---
-name: Western Sahara
-slug: western-sahara
 code: EH
 status: unknown
 timeline:

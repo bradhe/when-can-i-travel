@@ -1,6 +1,4 @@
 ---
-name: Myanmar
-slug: myanmar
 code: MM
 status: unknown
 timeline:

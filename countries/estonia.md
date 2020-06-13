@@ -1,6 +1,4 @@
 ---
-name: Estonia
-slug: estonia
 code: EE
 status: unknown
 timeline:

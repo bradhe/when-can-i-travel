@@ -1,6 +1,4 @@
 ---
-name: Monaco
-slug: monaco
 code: MC
 status: unknown
 timeline:

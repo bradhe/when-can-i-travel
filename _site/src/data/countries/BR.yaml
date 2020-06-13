@@ -4,3 +4,5 @@ name: Brazil
 origin:
   lat: -14.235004
   lon: -51.92528
+slug: brazil
+continent: SA

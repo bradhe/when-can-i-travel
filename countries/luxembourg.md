@@ -1,6 +1,4 @@
 ---
-name: Luxembourg
-slug: luxembourg
 code: LU
 status: unknown
 timeline:

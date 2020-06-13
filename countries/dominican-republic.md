@@ -1,6 +1,4 @@
 ---
-name: Dominican Republic
-slug: dominican-republic
 code: DO
 status: unknown
 timeline:

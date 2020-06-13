@@ -4,3 +4,5 @@ name: Guam
 origin:
   lat: 13.444304
   lon: 144.793731
+slug: guam
+continent: OC

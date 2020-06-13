@@ -1,6 +1,4 @@
 ---
-name: Northern Mariana Islands
-slug: northern-mariana-islands
 code: MP
 status: unknown
 timeline:

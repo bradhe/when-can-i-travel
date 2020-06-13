@@ -4,3 +4,5 @@ name: Malawi
 origin:
   lat: -13.254308
   lon: 34.301525
+slug: malawi
+continent: AF

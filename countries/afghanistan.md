@@ -1,6 +1,4 @@
 ---
-name: Afghanistan
-slug: afghanistan
 code: AF
 status: unknown
 timeline:

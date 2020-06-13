@@ -1,6 +1,4 @@
 ---
-name: Burundi
-slug: burundi
 code: BI
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Guatemala
-slug: guatemala
 code: GT
 status: unknown
 timeline:

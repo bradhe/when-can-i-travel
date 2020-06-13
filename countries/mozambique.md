@@ -1,6 +1,4 @@
 ---
-name: Mozambique
-slug: mozambique
 code: MZ
 status: unknown
 timeline:

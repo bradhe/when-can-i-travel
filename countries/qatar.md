@@ -1,6 +1,4 @@
 ---
-name: Qatar
-slug: qatar
 code: QA
 status: unknown
 timeline:

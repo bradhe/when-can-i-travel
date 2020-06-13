@@ -4,3 +4,5 @@ name: China
 origin:
   lat: 35.86166
   lon: 104.195397
+slug: china
+continent: AS

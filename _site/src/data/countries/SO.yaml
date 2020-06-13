@@ -4,3 +4,5 @@ name: Somalia
 origin:
   lat: 5.152149
   lon: 46.199616
+slug: somalia
+continent: AF

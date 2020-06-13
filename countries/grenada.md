@@ -1,6 +1,4 @@
 ---
-name: Grenada
-slug: grenada
 code: GD
 status: unknown
 timeline:

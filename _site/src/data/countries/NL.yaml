@@ -4,3 +4,5 @@ name: Netherlands
 origin:
   lat: 52.132633
   lon: 5.291266
+slug: netherlands
+continent: EU

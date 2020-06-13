@@ -1,6 +1,4 @@
 ---
-name: Reunion
-slug: reunion
 code: RE
 status: unknown
 timeline:

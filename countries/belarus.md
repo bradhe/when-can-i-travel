@@ -1,6 +1,4 @@
 ---
-name: Belarus
-slug: belarus
 code: BY
 status: unknown
 timeline:

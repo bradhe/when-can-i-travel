@@ -1,6 +1,4 @@
 ---
-name: Haiti
-slug: haiti
 code: HT
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Niger
-slug: niger
 code: NE
 status: unknown
 timeline:

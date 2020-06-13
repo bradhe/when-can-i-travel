@@ -4,3 +4,5 @@ name: Bahrain
 origin:
   lat: 25.930414
   lon: 50.637772
+slug: bahrain
+continent: AS

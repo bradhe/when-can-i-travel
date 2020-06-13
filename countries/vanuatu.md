@@ -1,6 +1,4 @@
 ---
-name: Vanuatu
-slug: vanuatu
 code: VU
 status: unknown
 timeline:

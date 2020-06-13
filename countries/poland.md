@@ -1,6 +1,4 @@
 ---
-name: Poland
-slug: poland
 code: PL
 status: unknown
 timeline:

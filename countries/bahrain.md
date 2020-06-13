@@ -1,6 +1,4 @@
 ---
-name: Bahrain
-slug: bahrain
 code: BH
 status: unknown
 timeline:

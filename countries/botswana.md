@@ -1,6 +1,4 @@
 ---
-name: Botswana
-slug: botswana
 code: BW
 status: unknown
 timeline:

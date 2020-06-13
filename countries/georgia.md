@@ -1,6 +1,4 @@
 ---
-name: Georgia
-slug: georgia
 code: GE
 status: unknown
 timeline:

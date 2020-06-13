@@ -1,6 +1,4 @@
 ---
-name: Cameroon
-slug: cameroon
 code: CM
 status: unknown
 timeline:

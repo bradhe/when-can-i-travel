@@ -4,3 +4,5 @@ name: Greenland
 origin:
   lat: 71.706936
   lon: -42.604303
+slug: greenland
+continent: NA

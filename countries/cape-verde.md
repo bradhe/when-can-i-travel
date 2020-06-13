@@ -1,6 +1,4 @@
 ---
-name: Cape Verde
-slug: cape-verde
 code: CV
 status: unknown
 timeline:

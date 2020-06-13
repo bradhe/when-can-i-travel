@@ -4,3 +4,5 @@ name: Suriname
 origin:
   lat: 3.919305
   lon: -56.027783
+slug: suriname
+continent: SA

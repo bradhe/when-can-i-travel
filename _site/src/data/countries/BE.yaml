@@ -4,3 +4,5 @@ name: Belgium
 origin:
   lat: 50.503887
   lon: 4.469936
+slug: belgium
+continent: EU

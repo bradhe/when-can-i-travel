@@ -4,3 +4,5 @@ name: Gabon
 origin:
   lat: -0.803689
   lon: 11.609444
+slug: gabon
+continent: AF

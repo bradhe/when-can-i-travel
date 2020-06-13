@@ -4,3 +4,5 @@ name: Cameroon
 origin:
   lat: 7.369722
   lon: 12.354722
+slug: cameroon
+continent: AF

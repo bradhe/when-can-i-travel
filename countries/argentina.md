@@ -1,6 +1,4 @@
 ---
-name: Argentina
-slug: argentina
 code: AR
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Senegal
-slug: senegal
 code: SN
 status: unknown
 timeline:

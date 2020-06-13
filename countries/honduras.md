@@ -1,6 +1,4 @@
 ---
-name: Honduras
-slug: honduras
 code: HN
 status: unknown
 timeline:

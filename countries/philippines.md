@@ -1,6 +1,4 @@
 ---
-name: Philippines
-slug: philippines
 code: PH
 status: unknown
 timeline:

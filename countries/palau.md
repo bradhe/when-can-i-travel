@@ -1,6 +1,4 @@
 ---
-name: Palau
-slug: palau
 code: PW
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Antarctica
-slug: antarctica
 code: AQ
 status: unknown
 timeline:

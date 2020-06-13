@@ -4,3 +4,5 @@ name: Bahamas
 origin:
   lat: 25.03428
   lon: -77.39628
+slug: bahamas
+continent: NA

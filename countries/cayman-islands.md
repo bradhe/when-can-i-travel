@@ -1,6 +1,4 @@
 ---
-name: Cayman Islands
-slug: cayman-islands
 code: KY
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Greenland
-slug: greenland
 code: GL
 status: unknown
 timeline:

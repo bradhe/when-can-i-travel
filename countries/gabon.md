@@ -1,6 +1,4 @@
 ---
-name: Gabon
-slug: gabon
 code: GA
 status: unknown
 timeline:

@@ -4,3 +4,5 @@ name: Tunisia
 origin:
   lat: 33.886917
   lon: 9.537499
+slug: tunisia
+continent: AF

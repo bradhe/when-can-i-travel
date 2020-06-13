@@ -4,3 +4,5 @@ name: Eritrea
 origin:
   lat: 15.179384
   lon: 39.782334
+slug: eritrea
+continent: AF

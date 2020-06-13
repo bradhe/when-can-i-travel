@@ -4,3 +4,5 @@ name: Grenada
 origin:
   lat: 12.262776
   lon: -61.604171
+slug: grenada
+continent: NA

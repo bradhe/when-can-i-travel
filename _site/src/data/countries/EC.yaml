@@ -4,3 +4,5 @@ name: Ecuador
 origin:
   lat: -1.831239
   lon: -78.183406
+slug: ecuador
+continent: SA

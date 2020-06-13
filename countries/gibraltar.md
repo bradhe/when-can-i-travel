@@ -1,6 +1,4 @@
 ---
-name: Gibraltar
-slug: gibraltar
 code: GI
 status: unknown
 timeline:

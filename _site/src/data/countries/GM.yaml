@@ -4,3 +4,5 @@ name: Gambia
 origin:
   lat: 13.443182
   lon: -15.310139
+slug: gambia
+continent: AF

@@ -4,3 +4,5 @@ name: Macau
 origin:
   lat: 22.198745
   lon: 113.543873
+slug: macau
+continent: AS

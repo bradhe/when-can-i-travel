@@ -1,6 +1,4 @@
 ---
-name: Latvia
-slug: latvia
 code: LV
 status: unknown
 timeline:

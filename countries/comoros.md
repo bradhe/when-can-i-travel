@@ -1,6 +1,4 @@
 ---
-name: Comoros
-slug: comoros
 code: KM
 status: unknown
 timeline:

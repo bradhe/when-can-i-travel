@@ -4,3 +4,5 @@ name: Iceland
 origin:
   lat: 64.963051
   lon: -19.020835
+slug: iceland
+continent: EU

@@ -1,6 +1,4 @@
 ---
-name: Mali
-slug: mali
 code: ML
 status: unknown
 timeline:

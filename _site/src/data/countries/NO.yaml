@@ -1,6 +1,8 @@
 ---
-code: NO
+code: "NO"
 name: Norway
 origin:
   lat: 60.472024
   lon: 8.468946
+slug: norway
+continent: EU

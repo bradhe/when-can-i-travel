@@ -1,6 +1,4 @@
 ---
-name: Chile
-slug: chile
 code: CL
 status: unknown
 timeline:

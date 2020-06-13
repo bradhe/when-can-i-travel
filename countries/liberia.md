@@ -1,6 +1,4 @@
 ---
-name: Liberia
-slug: liberia
 code: LR
 status: unknown
 timeline:

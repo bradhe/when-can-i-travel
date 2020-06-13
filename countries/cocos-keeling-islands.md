@@ -1,6 +1,4 @@
 ---
-name: Cocos (keeling) Islands
-slug: cocos-keeling-islands
 code: CC
 status: unknown
 timeline:

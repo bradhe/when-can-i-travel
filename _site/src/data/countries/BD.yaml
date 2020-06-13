@@ -4,3 +4,5 @@ name: Bangladesh
 origin:
   lat: 23.684994
   lon: 90.356331
+slug: bangladesh
+continent: AS

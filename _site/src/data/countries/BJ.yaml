@@ -4,3 +4,5 @@ name: Benin
 origin:
   lat: 9.30769
   lon: 2.315834
+slug: benin
+continent: AF

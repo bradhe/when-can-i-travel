@@ -1,6 +1,4 @@
 ---
-name: Macau
-slug: macau
 code: MO
 status: unknown
 timeline:

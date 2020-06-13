@@ -1,6 +1,4 @@
 ---
-name: Lesotho
-slug: lesotho
 code: LS
 status: unknown
 timeline:

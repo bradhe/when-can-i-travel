@@ -1,6 +1,4 @@
 ---
-name: South Africa
-slug: south-africa
 code: ZA
 status: unknown
 timeline:

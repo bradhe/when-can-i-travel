@@ -1,6 +1,4 @@
 ---
-name: Thailand
-slug: thailand
 code: TH
 status: unknown
 timeline:

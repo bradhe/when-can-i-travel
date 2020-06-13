@@ -1,6 +1,4 @@
 ---
-name: Bhutan
-slug: bhutan
 code: BT
 status: unknown
 timeline:

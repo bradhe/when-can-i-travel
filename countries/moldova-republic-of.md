@@ -1,6 +1,4 @@
 ---
-name: Moldova, Republic Of
-slug: moldova-republic-of
 code: MD
 status: unknown
 timeline:

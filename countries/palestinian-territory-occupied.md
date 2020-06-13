@@ -1,6 +1,4 @@
 ---
-name: Palestinian Territory, Occupied
-slug: palestinian-territory-occupied
 code: PS
 status: unknown
 timeline:

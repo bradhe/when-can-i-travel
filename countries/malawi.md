@@ -1,6 +1,4 @@
 ---
-name: Malawi
-slug: malawi
 code: MW
 status: unknown
 timeline:

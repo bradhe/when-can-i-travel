@@ -1,6 +1,4 @@
 ---
-name: Canada
-slug: canada
 code: CA
 status: unknown
 timeline:

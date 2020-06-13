@@ -1,6 +1,4 @@
 ---
-name: Nigeria
-slug: nigeria
 code: NG
 status: unknown
 timeline:

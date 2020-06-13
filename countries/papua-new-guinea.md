@@ -1,6 +1,4 @@
 ---
-name: Papua New Guinea
-slug: papua-new-guinea
 code: PG
 status: unknown
 timeline:

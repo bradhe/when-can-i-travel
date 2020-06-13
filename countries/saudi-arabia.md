@@ -1,6 +1,4 @@
 ---
-name: Saudi Arabia
-slug: saudi-arabia
 code: SA
 status: unknown
 timeline:

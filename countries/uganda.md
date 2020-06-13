@@ -1,6 +1,4 @@
 ---
-name: Uganda
-slug: uganda
 code: UG
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Yemen
-slug: yemen
 code: YE
 status: unknown
 timeline:

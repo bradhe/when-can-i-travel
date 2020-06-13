@@ -4,3 +4,5 @@ name: Cayman Islands
 origin:
   lat: 19.513469
   lon: -80.566956
+slug: cayman-islands
+continent: NA

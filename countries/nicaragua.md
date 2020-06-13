@@ -1,6 +1,4 @@
 ---
-name: Nicaragua
-slug: nicaragua
 code: NI
 status: unknown
 timeline:

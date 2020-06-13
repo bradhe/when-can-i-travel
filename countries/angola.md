@@ -1,6 +1,4 @@
 ---
-name: Angola
-slug: angola
 code: AO
 status: unknown
 timeline:

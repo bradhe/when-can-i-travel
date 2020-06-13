@@ -1,6 +1,4 @@
 ---
-name: Saint Lucia
-slug: saint-lucia
 code: LC
 status: unknown
 timeline:

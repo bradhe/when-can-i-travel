@@ -1,6 +1,4 @@
 ---
-name: Germany
-slug: germany
 code: DE
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Fiji
-slug: fiji
 code: FJ
 status: unknown
 timeline:

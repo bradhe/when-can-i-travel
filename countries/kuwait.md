@@ -1,6 +1,4 @@
 ---
-name: Kuwait
-slug: kuwait
 code: KW
 status: unknown
 timeline:

@@ -4,3 +4,5 @@ name: Argentina
 origin:
   lat: -38.416097
   lon: -63.616672
+slug: argentina
+continent: SA

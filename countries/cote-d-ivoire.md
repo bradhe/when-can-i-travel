@@ -1,6 +1,4 @@
 ---
-name: Cote D'ivoire
-slug: cote-d-ivoire
 code: CI
 status: unknown
 timeline:

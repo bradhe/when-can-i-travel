@@ -1,6 +1,4 @@
 ---
-name: France
-slug: france
 code: FR
 status: unknown
 timeline:

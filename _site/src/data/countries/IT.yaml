@@ -4,3 +4,5 @@ name: Italy
 origin:
   lat: 41.87194
   lon: 12.56738
+slug: italy
+continent: EU

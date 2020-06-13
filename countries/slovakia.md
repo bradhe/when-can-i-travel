@@ -1,6 +1,4 @@
 ---
-name: Slovakia
-slug: slovakia
 code: SK
 status: unknown
 timeline:

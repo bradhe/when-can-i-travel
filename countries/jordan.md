@@ -1,6 +1,4 @@
 ---
-name: Jordan
-slug: jordan
 code: JO
 status: unknown
 timeline:

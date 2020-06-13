@@ -4,3 +4,5 @@ name: France
 origin:
   lat: 46.227638
   lon: 2.213749
+slug: france
+continent: EU

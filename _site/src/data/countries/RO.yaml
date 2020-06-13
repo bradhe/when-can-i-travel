@@ -4,3 +4,5 @@ name: Romania
 origin:
   lat: 45.943161
   lon: 24.96676
+slug: romania
+continent: EU

@@ -1,6 +1,4 @@
 ---
-name: Brazil
-slug: brazil
 code: BR
 status: unknown
 timeline:

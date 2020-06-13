@@ -1,6 +1,4 @@
 ---
-name: Niue
-slug: niue
 code: NU
 status: unknown
 timeline:

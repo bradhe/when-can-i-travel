@@ -1,6 +1,4 @@
 ---
-name: Zambia
-slug: zambia
 code: ZM
 status: unknown
 timeline:

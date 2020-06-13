@@ -4,3 +4,5 @@ name: New Zealand
 origin:
   lat: -40.900557
   lon: 174.885971
+slug: new-zealand
+continent: OC

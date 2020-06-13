@@ -1,6 +1,4 @@
 ---
-name: Bahamas
-slug: bahamas
 code: BS
 status: unknown
 timeline:

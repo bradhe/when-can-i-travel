@@ -1,6 +1,4 @@
 ---
-name: Kiribati
-slug: kiribati
 code: KI
 status: unknown
 timeline:

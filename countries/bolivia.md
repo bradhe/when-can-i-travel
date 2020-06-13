@@ -1,6 +1,4 @@
 ---
-name: Bolivia
-slug: bolivia
 code: BO
 status: unknown
 timeline:

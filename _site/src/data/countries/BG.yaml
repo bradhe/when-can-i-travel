@@ -4,3 +4,5 @@ name: Bulgaria
 origin:
   lat: 42.733883
   lon: 25.48583
+slug: bulgaria
+continent: EU

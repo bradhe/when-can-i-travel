@@ -1,6 +1,4 @@
 ---
-name: Guyana
-slug: guyana
 code: GY
 status: unknown
 timeline:

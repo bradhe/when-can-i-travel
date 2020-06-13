@@ -1,6 +1,4 @@
 ---
-name: Djibouti
-slug: djibouti
 code: DJ
 status: unknown
 timeline:

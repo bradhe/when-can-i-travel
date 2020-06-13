@@ -1,6 +1,4 @@
 ---
-name: Tuvalu
-slug: tuvalu
 code: TV
 status: unknown
 timeline:

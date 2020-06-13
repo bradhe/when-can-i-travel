@@ -4,3 +4,5 @@ name: Spain
 origin:
   lat: 40.463667
   lon: -3.74922
+slug: spain
+continent: EU

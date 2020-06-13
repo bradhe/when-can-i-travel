@@ -1,6 +1,4 @@
 ---
-name: Portugal
-slug: portugal
 code: PT
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Hungary
-slug: hungary
 code: HU
 status: unknown
 timeline:

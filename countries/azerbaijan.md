@@ -1,6 +1,4 @@
 ---
-name: Azerbaijan
-slug: azerbaijan
 code: AZ
 status: unknown
 timeline:

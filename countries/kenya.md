@@ -1,6 +1,4 @@
 ---
-name: Kenya
-slug: kenya
 code: KE
 status: unknown
 timeline:

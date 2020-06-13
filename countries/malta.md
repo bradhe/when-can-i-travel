@@ -1,6 +1,4 @@
 ---
-name: Malta
-slug: malta
 code: MT
 status: unknown
 timeline:

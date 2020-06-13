@@ -1,6 +1,4 @@
 ---
-name: Mauritius
-slug: mauritius
 code: MU
 status: unknown
 timeline:

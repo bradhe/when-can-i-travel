@@ -4,3 +4,5 @@ name: Seychelles
 origin:
   lat: -4.679574
   lon: 55.491977
+slug: seychelles
+continent: AF

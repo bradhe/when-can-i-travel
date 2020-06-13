@@ -1,6 +1,4 @@
 ---
-name: Rwanda
-slug: rwanda
 code: RW
 status: unknown
 timeline:

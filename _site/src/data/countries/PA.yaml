@@ -4,3 +4,5 @@ name: Panama
 origin:
   lat: 8.537981
   lon: -80.782127
+slug: panama
+continent: NA

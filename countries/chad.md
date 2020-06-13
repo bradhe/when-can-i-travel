@@ -1,6 +1,4 @@
 ---
-name: Chad
-slug: chad
 code: TD
 status: unknown
 timeline:

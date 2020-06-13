@@ -4,3 +4,5 @@ name: Cuba
 origin:
   lat: 21.521757
   lon: -77.781167
+slug: cuba
+continent: NA

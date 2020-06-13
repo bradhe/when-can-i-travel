@@ -1,6 +1,4 @@
 ---
-name: Ethiopia
-slug: ethiopia
 code: ET
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Japan
-slug: japan
 code: JP
 status: unknown
 timeline:

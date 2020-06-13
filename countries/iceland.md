@@ -1,6 +1,4 @@
 ---
-name: Iceland
-slug: iceland
 code: IS
 status: unknown
 timeline:

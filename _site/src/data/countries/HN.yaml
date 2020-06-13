@@ -4,3 +4,5 @@ name: Honduras
 origin:
   lat: 15.199999
   lon: -86.241905
+slug: honduras
+continent: NA

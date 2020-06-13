@@ -4,3 +4,5 @@ name: Malta
 origin:
   lat: 35.937496
   lon: 14.375416
+slug: malta
+continent: EU

@@ -1,6 +1,4 @@
 ---
-name: Turkmenistan
-slug: turkmenistan
 code: TM
 status: unknown
 timeline:

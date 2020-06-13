@@ -1,6 +1,4 @@
 ---
-name: French Guiana
-slug: french-guiana
 code: GF
 status: unknown
 timeline:

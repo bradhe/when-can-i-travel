@@ -1,6 +1,4 @@
 ---
-name: Uruguay
-slug: uruguay
 code: UY
 status: unknown
 timeline:

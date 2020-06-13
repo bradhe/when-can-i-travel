@@ -1,6 +1,4 @@
 ---
-name: Taiwan, Province Of China
-slug: taiwan-province-of-china
 code: TW
 status: unknown
 timeline:

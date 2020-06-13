@@ -4,3 +4,5 @@ name: Saudi Arabia
 origin:
   lat: 23.885942
   lon: 45.079162
+slug: saudi-arabia
+continent: AS

@@ -1,6 +1,4 @@
 ---
-name: Kazakstan
-slug: kazakstan
 code: KZ
 status: unknown
 timeline:

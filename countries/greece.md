@@ -1,6 +1,4 @@
 ---
-name: Greece
-slug: greece
 code: GR
 status: unknown
 timeline:

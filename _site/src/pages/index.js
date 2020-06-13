@@ -13,29 +13,36 @@ query {
     nodes {
       frontmatter {
         code
-        name
-        slug
       }
+    }
+  }
+  allCountriesYaml {
+    nodes {
+      name
+      slug
+      continent
+      code
     }
   }
 }
 `;
 
-const onMapClick = (page) => {
-  const { frontmatter } = page;
-  const url = `/to/${frontmatter.slug}`;
+const onMapClick = (country) => navigate(makePath(country));
 
-  navigate(url);
-};
+const makePath = (country) => `/to/${country.slug}`;
 
-const makePath = (page) => `/to/${page.frontmatter.slug}`;
+const findCountry = (countries, code) => countries.filter((c) => c.code === code)[0];
 
-const renderCountryList = (pages) => {
-  const children = pages.map((page) => (
-    <li key={page.frontmatter.slug}>
-      <Link to={makePath(page)}>{page.frontmatter.name}</Link>
-    </li>
-  ));
+const renderCountryList = (pages, countries) => {
+  const children = pages.map((page) => {
+    const country = findCountry(countries, page.frontmatter.code);
+
+    return (
+      <li key={country.slug}>
+        <Link to={makePath(country)}>{country.name}</Link>
+      </li>
+    );
+  });
 
   return <ol>{children}</ol>;
 };
@@ -58,7 +65,7 @@ const IndexPage = ({ data }) => (
 
     <div className="row">
       <div className="col">
-        {renderCountryList(data.allMarkdownRemark.nodes)}
+        {renderCountryList(data.allMarkdownRemark.nodes, data.allCountriesYaml.nodes)}
       </div>
     </div>
   </Layout>

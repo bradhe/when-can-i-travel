@@ -1,6 +1,4 @@
 ---
-name: Pakistan
-slug: pakistan
 code: PK
 status: unknown
 timeline:

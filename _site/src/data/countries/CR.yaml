@@ -4,3 +4,5 @@ name: Costa Rica
 origin:
   lat: 9.748917
   lon: -83.753428
+slug: costa-rica
+continent: NA

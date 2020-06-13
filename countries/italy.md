@@ -1,6 +1,4 @@
 ---
-name: Italy
-slug: italy
 code: IT
 status: unknown
 timeline:

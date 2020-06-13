@@ -1,6 +1,4 @@
 ---
-name: Puerto Rico
-slug: puerto-rico
 code: PR
 status: unknown
 timeline:

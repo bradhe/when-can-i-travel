@@ -1,6 +1,4 @@
 ---
-name: Belize
-slug: belize
 code: BZ
 status: unknown
 timeline:

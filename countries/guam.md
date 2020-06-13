@@ -1,6 +1,4 @@
 ---
-name: Guam
-slug: guam
 code: GU
 status: unknown
 timeline:

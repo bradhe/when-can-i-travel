@@ -4,3 +4,5 @@ name: Greece
 origin:
   lat: 39.074208
   lon: 21.824312
+slug: greece
+continent: EU

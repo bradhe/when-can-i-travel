@@ -1,6 +1,4 @@
 ---
-name: Burkina Faso
-slug: burkina-faso
 code: BF
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Belgium
-slug: belgium
 code: BE
 status: unknown
 timeline:

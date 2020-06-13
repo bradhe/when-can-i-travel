@@ -1,6 +1,4 @@
 ---
-name: Syrian Arab Republic
-slug: syrian-arab-republic
 code: SY
 status: unknown
 timeline:

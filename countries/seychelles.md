@@ -1,6 +1,4 @@
 ---
-name: Seychelles
-slug: seychelles
 code: SC
 status: unknown
 timeline:

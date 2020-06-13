@@ -1,6 +1,4 @@
 ---
-name: Denmark
-slug: denmark
 code: DK
 status: unknown
 timeline:

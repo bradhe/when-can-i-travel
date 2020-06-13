@@ -1,6 +1,4 @@
 ---
-name: Trinidad And Tobago
-slug: trinidad-and-tobago
 code: TT
 status: unknown
 timeline:

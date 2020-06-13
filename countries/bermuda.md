@@ -1,6 +1,4 @@
 ---
-name: Bermuda
-slug: bermuda
 code: BM
 status: unknown
 timeline:

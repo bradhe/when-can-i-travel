@@ -1,6 +1,4 @@
 ---
-name: Turkey
-slug: turkey
 code: TR
 status: unknown
 timeline:

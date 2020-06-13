@@ -4,3 +4,5 @@ name: Ethiopia
 origin:
   lat: 9.145
   lon: 40.489673
+slug: ethiopia
+continent: AF

@@ -4,3 +4,5 @@ name: Solomon Islands
 origin:
   lat: -9.64571
   lon: 160.156194
+slug: solomon-islands
+continent: OC

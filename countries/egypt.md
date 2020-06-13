@@ -1,6 +1,4 @@
 ---
-name: Egypt
-slug: egypt
 code: EG
 status: unknown
 timeline:

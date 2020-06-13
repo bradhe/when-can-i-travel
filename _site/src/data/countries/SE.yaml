@@ -4,3 +4,5 @@ name: Sweden
 origin:
   lat: 60.128161
   lon: 18.643501
+slug: sweden
+continent: EU

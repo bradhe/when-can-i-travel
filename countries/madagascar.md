@@ -1,6 +1,4 @@
 ---
-name: Madagascar
-slug: madagascar
 code: MG
 status: unknown
 timeline:

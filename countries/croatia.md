@@ -1,6 +1,4 @@
 ---
-name: Croatia
-slug: croatia
 code: HR
 status: unknown
 timeline:

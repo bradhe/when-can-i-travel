@@ -1,6 +1,4 @@
 ---
-name: China
-slug: china
 code: CN
 status: unknown
 timeline:

@@ -1,6 +1,4 @@
 ---
-name: Sudan
-slug: sudan
 code: SD
 status: unknown
 timeline:
