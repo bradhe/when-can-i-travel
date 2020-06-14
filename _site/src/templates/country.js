@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Map from "../components/Map";
 import PageTitle from "../components/PageTitle";
@@ -31,11 +31,11 @@ query GetCountryData($countryCode: String) {
 
 const assertOneNode = (data) => {
   if (!data.nodes) {
-    throw "expected nodes to be present";
+    throw new Error("expected nodes to be present");
   }
 
-  if (data.nodes.length != 1) {
-    throw `expected nodes length to be 1, was ${data.nodes.length} `;
+  if (data.nodes.length !== 1) {
+    throw new Error(`expected nodes length to be 1, was ${data.nodes.length}`);
   }
 };
 

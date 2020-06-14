@@ -4,7 +4,6 @@ import { Link, graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import PageTitle from "../components/PageTitle"
 import WorldMap from "../components/WorldMap"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 export const query = graphql`
