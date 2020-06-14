@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 
 import Map from "../components/Map";
 import PageTitle from "../components/PageTitle";
+import Timeline from "../components/Timeline";
 
 export const query = graphql`
 query GetCountryData($countryCode: String) {
@@ -22,6 +23,13 @@ query GetCountryData($countryCode: String) {
     nodes {
       frontmatter {
         code
+        status
+        timeline {
+          borders_closed_at
+          borders_partially_opened_at
+          borders_projected_opened_at
+          borders_opened_at
+        }
       }
       html
     }
@@ -50,8 +58,8 @@ const Country = ({ pageContext, data }) => {
   const { origin } = country;
   const { lat, lon } = origin;
 
-  // This is all the Markdown for generating the actual page itself.
   const page = data.allMarkdownRemark.nodes[0];
+  const { timeline } = page.frontmatter;
 
   return (
     <Layout>
@@ -64,6 +72,14 @@ const Country = ({ pageContext, data }) => {
       <div className="row">
         <div className="col">
           <Map countryCode={pageContext.countryCode} lat={lat} lon={lon} />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col">
+          <Timeline>
+            <Timeline.Date title="Borders closed" date={timeline.borders_closed_at} />
+          </Timeline>
         </div>
       </div>
 
