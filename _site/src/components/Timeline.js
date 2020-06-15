@@ -1,65 +1,137 @@
 import React from 'react';
 import moment from 'moment';
 import classnames from 'classnames';
+import { filter, reduce, minBy } from 'ramda';
+import * as d3 from 'd3';
 
-const TIMELINE_START_DATE = moment("2020-01-01T00:00:00Z");
-const TIMELINE_END_DATE = moment("2020-12-31T23:59:59Z");
+const addNowMarker = (vis, date, scale, width, height, rectHeight) => {
+  var now = moment(date).toDate();
 
-const calcDateOffset = (maxOffset, startAt) => {
-  const max = TIMELINE_END_DATE.diff(TIMELINE_START_DATE);
-  const current = moment(startAt).diff(TIMELINE_START_DATE);
+  vis.append("line").
+    attr('class', 'timeline-date-marker').
+    attr("x1", scale(now)).
+    attr("x2", scale(now)).
+    attr("y1", 0).
+    attr("y2", height);
+}
 
-  return maxOffset * (current / max);
+const addMonthMarker = (vis, date, scale, width, height, rectHeight) => {
+  var padding = 0;
+
+  var start = moment(date).toDate();
+  var end = moment(date).add(1, 'month').subtract(1, 'second').toDate();
+
+  vis.append("line").
+    attr('class', 'timeline-date-marker').
+    attr("x1", scale(start)).
+    attr("x2", scale(start)).
+    attr("y1", 0).
+    attr("y2", height);
+
+  vis.append('text').
+    attr('x', scale(start) + ((scale(end) - scale(start)) / 2)).
+    attr('y', (height / 2) + 5).
+    attr('class', 'timeline-date-label').
+    text(moment(date).format('MMMM'));
+}
+
+const addArea = (vis, start, end, scale, width, height, rectHeight, className) => {
+  var x = scale(moment(start).toDate());
+  var dx = scale(moment(end).toDate());
+
+  vis.append('rect').
+    attr('class', 'timeline-date-line ' + className).
+    attr('x', x).
+    attr('y', (height / 2) - (rectHeight / 2)).
+    attr('width', dx - x).
+    attr('height', rectHeight);
+}
+
+const renderTimeline = (elem, dates) => {
+  var width = elem.offsetWidth,
+      height = elem.offsetHeight;
+
+  var rectHeight = 35;
+  var padding = 0;
+
+  var vis = d3.select(elem).
+    append('svg:svg').
+    attr('width', width).
+    attr('height', height);
+
+  var defs = vis.append('defs');
+
+  defs.append('pattern').
+    attr('id', 'pattern-stripe').
+    attr('width', 4).
+    attr('height', 4).
+    attr('patternUnits', 'userSpaceOnUse').
+    attr('patternTransform', 'rotate(45)').
+      append('rect').
+      attr('width', 2).
+      attr('height', 4).
+      attr('transform', 'translate(0, 0)').
+      attr('fill', 'white');
+
+  defs.append('mask').
+    attr('id', 'mask-stripe').
+    append('rect').
+      attr('x', 0).
+      attr('y', 0).
+      attr('width', '100%').
+      attr('height', '100%').
+      attr('fill', 'url(#pattern-stripe)');
+
+  var xScale = d3.scaleTime().
+    domain([moment('2020-01-01').toDate(), moment('2020-12-31').toDate()]).
+    range([2, width - padding * 2]);
+
+  var timeline = vis.append('g');
+  addArea(timeline, "2020-01-01", dates.closed, xScale, width, height, rectHeight);
+
+  var now = moment();
+
+  if (dates.opened) {
+    var opened = moment(dates.opened);
+
+    if (opened.isBefore(now)) {
+      addArea(timeline, dates.closed, opened, xScale, width, height, rectHeight, 'timeline-date-line-is-closed');
+      addArea(timeline, opened, '2020-12-31T00:00:00Z', xScale, width, height, rectHeight, 'timeline-date-line-opened');
+    } else {
+      addArea(timeline, dates.closed, now, xScale, width, height, rectHeight, 'timeline-date-line-is-closed');
+      addArea(timeline, now, opened, xScale, width, height, rectHeight, 'timeline-date-line-projected-to-open');
+      addArea(timeline, opened, '2020-12-31T00:00:00Z', xScale, width, height, rectHeight, 'timeline-date-line-projected-opened');
+    }
+
+  } else {
+    addArea(timeline, dates.closed, now, xScale, width, height, rectHeight, 'timeline-date-line-is-closed');
+    addArea(timeline, now, '2020-12-31T23:59:59Z', xScale, width, height, rectHeight, 'timeline-date-line-projected-closed');
+  }
+
+  var markers = vis.append('g');
+
+  for (var i = 1; i <= 12; i++) {
+    addMonthMarker(markers, "2020-"+i+"-01", xScale, width, height, rectHeight);
+  }
+
+  addNowMarker(markers, now, xScale, width, height, rectHeight);
 };
 
-const Timeline = ({children }) => {
-  const width = 100;
-  const height = 13;
+class Timeline extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  const months = {
-    "January": "2020-01-01T00:00:00Z",
-    "Februrary": "2020-02-01T00:00:00Z",
-    "March": "2020-03-01T00:00:00Z",
-    "April": "2020-04-01T00:00:00Z",
-    "May": "2020-05-01T00:00:00Z",
-    "June": "2020-06-01T00:00:00Z",
-    "July": "2020-07-01T00:00:00Z",
-    "August": "2020-08-01T00:00:00Z",
-    "September": "2020-09-01T00:00:00Z",
-    "October": "2020-10-01T00:00:00Z",
-    "November": "2020-11-01T00:00:00Z",
-    "December": "2020-12-01T00:00:00Z",
-  };
+  componentDidMount() {
+    const { container } = this.refs;
+    const { dates } = this.props;
 
-    const hashes = Object.keys(months).map((month) => {
-      const offset = calcDateOffset(width, months[month]);
+    renderTimeline(container, dates);
+  }
 
-      const startAt = moment(months[month]);
-      const nextOffset = calcDateOffset(width, startAt.add(1, 'month'));
-
-      return (
-        <g key={`month-${month}`} className="wcit-timeline-month-marking">
-          <line x1={offset} y1={(height / 2) - 1} x2={offset} y2={(height / 2) + 1} />
-          <text x={offset + ((nextOffset - offset) / 2)} y={(height / 2) + 1.5}>{month}</text>
-        </g>
-      );
-    });
-
-  return (
-    <svg viewBox="-1 -1 101 14" className="wcit-timeline">
-      <g className="wcit-timeline-line">
-        <line x1={0} y1={(height / 2) - 1.5} x2={0} y2={(height / 2) + 1.5} />
-        <line x1={0} y1={height / 2} x2="100" y2={height / 2} />
-        <line x1={100} y1={(height / 2) - 1.5} x2={100} y2={(height / 2) + 1.5} />
-      </g>
-
-      {hashes}
-
-      <g>
-        {children}
-      </g>
-    </svg>
-  );
+  render() {
+    return (<div className="wcit-timeline" ref="container" />);
+  }
 };
 
 const getTitle = (type) => {
@@ -74,34 +146,5 @@ const getTitle = (type) => {
       return "Borders will open";
   }
 }
-
-const TimelineDate = ({ type, date }) => {
-  // This indicates that we don't want to actually draw anything.
-  if (!date || date === '0001-01-01T00:00:00Z') {
-    return null;
-  }
-
-  const width = 100;
-  const height = 13;
-
-  const offset = calcDateOffset(width - 2, date);
-
-  const className = classnames('wcit-timeline-key-date', {
-    'wcit-timeline-closed-date': type === 'closed',
-    'wcit-timeline-opened-date': type === 'opened',
-    'wcit-timeline-projected-opened-date': type === 'projected-opened',
-    'wcit-timeline-partially-opened-date': type === 'partially-opened',
-  });
-
-  return (
-    <g className={className}>
-      <line x1={offset} y1={height / 2 - 2} x2={offset} y2={height / 2 + 2} className="wcit-timeline-date" />
-      <text x={offset} y={(height / 2) - 2.5}>{getTitle(type)}</text>
-
-    </g>
-  );
-};
-
-Timeline.Date = TimelineDate;
 
 export default Timeline;

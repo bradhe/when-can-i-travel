@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby";
 
-import Map from "../components/Map";
+import CountryMap from "../components/CountryMap";
 import PageTitle from "../components/PageTitle";
 import Timeline from "../components/Timeline";
 
@@ -47,7 +47,7 @@ const assertOneNode = (data) => {
   }
 };
 
-const Country = ({ pageContext, data }) => {
+const CountryPage = ({ pageContext, data }) => {
   // there should be only one node here. If there isn't then something went
   // wrong and we should abort the build.
   assertOneNode(data.allCountriesYaml);
@@ -61,6 +61,11 @@ const Country = ({ pageContext, data }) => {
   const page = data.allMarkdownRemark.nodes[0];
   const { timeline } = page.frontmatter;
 
+  const dates = {
+    closed: timeline.borders_closed_at,
+    opened: timeline.borders_opened_at,
+  };
+
   return (
     <Layout>
       <div className="row">
@@ -71,18 +76,13 @@ const Country = ({ pageContext, data }) => {
 
       <div className="row">
         <div className="col">
-          <Map countryCode={pageContext.countryCode} lat={lat} lon={lon} />
+          <CountryMap countryCode={pageContext.countryCode} lat={lat} lon={lon} />
         </div>
       </div>
 
       <div className="row">
         <div className="col">
-          <Timeline>
-            <Timeline.Date type="closed" date={timeline.borders_closed_at} />
-            <Timeline.Date type="projected-opened" date={timeline.borders_projected_opened_at} />
-            <Timeline.Date type="partially-opened" date={timeline.borders_partially_opened_at} />
-            <Timeline.Date type="opened" date={timeline.borders_opened_at} />
-          </Timeline>
+          <Timeline dates={dates}/>
         </div>
       </div>
 
@@ -95,4 +95,4 @@ const Country = ({ pageContext, data }) => {
   )
 };
 
-export default Country;
+export default CountryPage;

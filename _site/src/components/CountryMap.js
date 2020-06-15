@@ -49,12 +49,14 @@ const renderGeography = (countryCode) => {
 
 const Map = ({ countryCode, lat, lon, ...props }) => {
   return (
-    <ComposableMap projection="geoAzimuthalEqualArea" projectionConfig={{ rotate: [-lon, -lat, 0], scale: 700 }}>
-      <Graticule />
-      <Geographies geography={geoUrl}>
-        { ({ geographies }) => geographies.map(renderGeography(countryCode)) }
-      </Geographies>
-    </ComposableMap>
+    <div className="wcit-country-map">
+      <ComposableMap projection="geoAzimuthalEqualArea" projectionConfig={{ rotate: [-lon, -lat, 0], scale: 700 }} width="1100" height="250">
+        <Graticule />
+        <Geographies geography={geoUrl}>
+          { ({ geographies }) => geographies.map(renderGeography(countryCode)) }
+        </Geographies>
+      </ComposableMap>
+    </div>
   );
 };
 

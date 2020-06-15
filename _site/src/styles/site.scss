@@ -1,3 +1,4 @@
+@import "variables";
 @import "bootstrap/bootstrap";
 
 $default-line-color: rgb(128, 128, 128);
@@ -7,84 +8,54 @@ $partially-opened-annotation-color: rgb(255,165,0);
 $projected-opened-annotation-color: rgb(255,165,0);
 
 .wcit-timeline {
-  max-height: 150px;
+  min-height: 75px;
 
   line {
-    stroke: $default-line-color;
-    stroke-width: 0.50;
+    stroke-width: 2px;
+    stroke: #394F49;
   }
 
-  .wcit-timeline-line {
-    line {
-      stroke-linecap: round;
-    }
+  text.timeline-date-label {
+    text-anchor: middle;
   }
 
-  .wcit-timeline-key-date {
-    text {
-      fill: $default-line-color;
-      font-size: 2px;
-      text-anchor: middle;
-    }
-
-    line {
-      stroke: $default-line-color;
-      stroke-width: 0.25;
-      stroke-linecap: round;
-    }
-
-    &.wcit-timeline-closed-date {
-      text {
-        fill: $closed-annotation-color;
-      }
-
-      line {
-        stroke: $closed-annotation-color;
-      }
-    }
-
-    &.wcit-timeline-opened-date {
-      text {
-        fill: $opened-annotation-color;
-      }
-
-      line {
-        stroke: $opened-annotation-color;
-      }
-    }
-
-    &.wcit-timeline-projected-opened-date {
-      text {
-        fill: $projected-opened-annotation-color;
-      }
-
-      line {
-        stroke: $projected-opened-annotation-color;
-      }
-    }
-
-    &.wcit-timeline-partially-opened-date {
-      text {
-        fill: $partially-opened-annotation-color;
-      }
-
-      line {
-        stroke: $partially-opened-annotation-color;
-      }
-    }
+  rect.timeline-date-line {
+    stroke: #394F49;
+    fill: #394F49;
   }
 
-  .wcit-timeline-month-marking {
-    text {
-      fill: #999;
-      font-size: 1.25px;
-      text-anchor: middle;
-    }
-
-    line {
-      stroke: rgba(128, 128, 128, 0.8);
-      stroke-width: 0.25;
-      stroke-linecap: round;
-    }
+  rect.timeline-date-line-is-closed {
+    stroke: #DD1C1A;
+    fill: #DD1C1A;
   }
+
+  rect.timeline-date-line-projected-to-open {
+    stroke: #DD1C1A;
+    fill: #DD1C1A;
+
+    mask: url(#mask-stripe)
+  }
+
+  rect.timeline-date-line-projected-closed {
+    stroke: #DD1C1A;
+    fill: #DD1C1A;
+
+    mask: url(#mask-stripe)
+  }
+
+  rect.timeline-date-line-projected-opened {
+    stroke: #00A676;
+    fill: #00A676;
+
+    mask: url(#mask-stripe)
+  }
+
+  rect.timeline-date-line-opened {
+    stroke: #00A676;
+    fill: #00A676;
+  }
+}
+
+.wcit-country-map {
+  max-height: 250px;
 }
