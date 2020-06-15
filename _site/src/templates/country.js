@@ -78,7 +78,10 @@ const Country = ({ pageContext, data }) => {
       <div className="row">
         <div className="col">
           <Timeline>
-            <Timeline.Date title="Borders closed" date={timeline.borders_closed_at} />
+            <Timeline.Date type="closed" date={timeline.borders_closed_at} />
+            <Timeline.Date type="projected-opened" date={timeline.borders_projected_opened_at} />
+            <Timeline.Date type="partially-opened" date={timeline.borders_partially_opened_at} />
+            <Timeline.Date type="opened" date={timeline.borders_opened_at} />
           </Timeline>
         </div>
       </div>

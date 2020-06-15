@@ -1,1 +1,90 @@
 @import "bootstrap/bootstrap";
+
+$default-line-color: rgb(128, 128, 128);
+$closed-annotation-color: rgb(255, 0, 0);
+$opened-annotation-color: rgb(0,128,0);
+$partially-opened-annotation-color: rgb(255,165,0);
+$projected-opened-annotation-color: rgb(255,165,0);
+
+.wcit-timeline {
+  max-height: 150px;
+
+  line {
+    stroke: $default-line-color;
+    stroke-width: 0.50;
+  }
+
+  .wcit-timeline-line {
+    line {
+      stroke-linecap: round;
+    }
+  }
+
+  .wcit-timeline-key-date {
+    text {
+      fill: $default-line-color;
+      font-size: 2px;
+      text-anchor: middle;
+    }
+
+    line {
+      stroke: $default-line-color;
+      stroke-width: 0.25;
+      stroke-linecap: round;
+    }
+
+    &.wcit-timeline-closed-date {
+      text {
+        fill: $closed-annotation-color;
+      }
+
+      line {
+        stroke: $closed-annotation-color;
+      }
+    }
+
+    &.wcit-timeline-opened-date {
+      text {
+        fill: $opened-annotation-color;
+      }
+
+      line {
+        stroke: $opened-annotation-color;
+      }
+    }
+
+    &.wcit-timeline-projected-opened-date {
+      text {
+        fill: $projected-opened-annotation-color;
+      }
+
+      line {
+        stroke: $projected-opened-annotation-color;
+      }
+    }
+
+    &.wcit-timeline-partially-opened-date {
+      text {
+        fill: $partially-opened-annotation-color;
+      }
+
+      line {
+        stroke: $partially-opened-annotation-color;
+      }
+    }
+  }
+
+  .wcit-timeline-month-marking {
+    text {
+      fill: #999;
+      font-size: 1.25px;
+      text-anchor: middle;
+    }
+
+    line {
+      stroke: rgba(128, 128, 128, 0.8);
+      stroke-width: 0.25;
+      stroke-linecap: round;
+    }
+  }
+}
