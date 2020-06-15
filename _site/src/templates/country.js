@@ -70,19 +70,18 @@ const CountryPage = ({ pageContext, data }) => {
     <Layout>
       <div className="row">
         <div className="col">
-          <PageTitle>When can I travel to {country.name}?</PageTitle>
+          <div className="wcit-country-title">
+            <PageTitle>When can I travel to {country.name}?</PageTitle>
+          </div>
         </div>
       </div>
 
       <div className="row">
         <div className="col">
-          <CountryMap countryCode={pageContext.countryCode} lat={lat} lon={lon} />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <Timeline dates={dates}/>
+          <div className="wcit-country-visualizations">
+            <CountryMap countryCode={pageContext.countryCode} lat={lat} lon={lon} />
+            <Timeline dates={dates}/>
+          </div>
         </div>
       </div>
 

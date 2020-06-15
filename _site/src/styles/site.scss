@@ -56,6 +56,29 @@ $projected-opened-annotation-color: rgb(255,165,0);
   }
 }
 
-.wcit-country-map {
-  max-height: 250px;
+.wcit-country-title {
+  padding: $grid-gutter-width / 2 0;
+}
+
+.wcit-country-visualizations {
+  border: 1px #ebebeb solid;
+
+  .wcit-country-map {
+    border-bottom: 1px #ebebeb solid;
+  }
+
+  .wcit-timeline {
+    background-color: #ebebeb;
+  }
+
+  .wcit-timeline-description {
+    background-color: #ebebeb;
+
+    p {
+      padding: $grid-gutter-width / 2 0;
+      margin: 0;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
 }

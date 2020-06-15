@@ -84,7 +84,7 @@ const renderTimeline = (elem, dates) => {
 
   var xScale = d3.scaleTime().
     domain([moment('2020-01-01').toDate(), moment('2020-12-31').toDate()]).
-    range([2, width - padding * 2]);
+    range([1, width]);
 
   var timeline = vis.append('g');
   addArea(timeline, "2020-01-01", dates.closed, xScale, width, height, rectHeight);
@@ -117,6 +117,28 @@ const renderTimeline = (elem, dates) => {
   addNowMarker(markers, now, xScale, width, height, rectHeight);
 };
 
+const formatDate = (d) => moment(d).utc().format("MMMM Do");
+
+const parseDate = (d) => d && d !== '0001-01-01T00:00:00Z' && moment(d);
+
+const getDescription = (dates) => {
+  const closed = parseDate(dates.closed);
+  const opened = parseDate(dates.opened);
+
+  // If all we know is that they are closed...
+  if (!closed && !opened) {
+    return <p className="wcit-timeline-description-text">Actually, we have no idea what's going on in this country.</p>
+  } else if (closed && !opened) {
+    return <p className="wcit-timeline-description-text">As of {formatDate(closed)} borders are closed to tourists. It is not known when they will open again.</p>;
+  } else {
+    if (opened.isBefore(moment())) {
+      return <p className="wcit-timeline-description-text">Borders closed on {formatDate(closed)} but have reopened as of {formatDate(opened)}.</p>;
+    } else {
+      return <p className="wcit-timeline-description-text">Borders closed on {formatDate(closed)} and are projected to reopen on {formatDate(opened)}.</p>;
+    }
+  }
+};
+
 class Timeline extends React.Component {
   constructor(props) {
     super(props);
@@ -130,21 +152,15 @@ class Timeline extends React.Component {
   }
 
   render() {
-    return (<div className="wcit-timeline" ref="container" />);
+    return (
+      <div className="wcit-timeline-container">
+        <div className="wcit-timeline" ref="container" />
+        <div className="wcit-timeline-description">
+          {getDescription(this.props.dates)}
+        </div>
+      </div>
+    );
   }
 };
-
-const getTitle = (type) => {
-  switch (type) {
-    case "closed":
-      return "Borders closed";
-    case "opened":
-      return "Borders opened";
-    case "partially-opened":
-      return "Borders partially opened";
-    case "projected-opened":
-      return "Borders will open";
-  }
-}
 
 export default Timeline;
