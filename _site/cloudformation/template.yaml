@@ -80,13 +80,16 @@ Resources:
           Compress: true
           ForwardedValues:
             QueryString: true
-            Cookies: 
+            Cookies:
               Forward: none
           MinTTL: 0
           MaxTTL: 900
           DefaultTTL: 300
           TargetOriginId: DefaultOrigin
           ViewerProtocolPolicy: redirect-to-https
+          LambdaFunctionAssociations:
+            - EventType: origin-request
+              LambdaFunctionARN: !Ref OriginRequestLambdaFunctionVersion
         HttpVersion: http2
         PriceClass: PriceClass_100
         ViewerCertificate:
@@ -98,6 +101,57 @@ Resources:
           Value: !Ref Environment
         - Key: Stack-Type
           Value: when-can-i-travel
+
+  #
+  # Lambda
+  #
+  OriginRequestLambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: >
+        Lambda function performing request URI rewriting.
+      Code:
+        ZipFile: |
+          const path = require('path');
+          exports.handler = async (event) => {
+            var request = event.Records[0].cf.request;
+            // Rewrite clean URLs (adding index.html)
+            if (!path.extname(request.uri)) {
+              request.uri = request.uri.replace(/\/?$/, '\/index.html');
+            }
+            return request;
+          };
+      Handler: index.handler
+      MemorySize: 128
+      Role: !Sub ${OriginRequestLambdaFunctionExecutionRole.Arn}
+      Runtime: nodejs12.x
+      Tags:
+        - Key: Environment
+          Value: !Ref Environment
+        - Key: Stack-Type
+          Value: when-can-i-travel
+
+  OriginRequestLambdaFunctionVersion:
+    Type: AWS::Lambda::Version
+    Properties:
+      FunctionName: !Ref OriginRequestLambdaFunction
+      Description: !Sub "URL rewriting for ${HostedZone}"
+
+  OriginRequestLambdaFunctionExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - edgelambda.amazonaws.com
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
 
   #
   # Route53
