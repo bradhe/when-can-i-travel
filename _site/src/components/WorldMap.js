@@ -10,12 +10,16 @@ import {
 
 const defaultStyle = {
   default: {
-    fill: '#9998A3',
-    stroke: '#333'
+    fill: '#E2E1E2',
+    stroke: '#bfbfbf',
   },
   hover: {
-    fill: '#ff9f00',
-    stroke: '#333'
+    fill: '#6C9CB4',
+    stroke: '#517c91',
+  },
+  pressed: {
+    fill: '#6C9CB4',
+    stroke: '#517c91',
   }
 };
 
@@ -57,9 +61,9 @@ const renderMap = ({ onCountryClick }) => {
     };
 
     return (
-      <ComposableMap projectionConfig={projectionConfig}>
+      <ComposableMap projectionConfig={projectionConfig} width="800" height="400">
         <Sphere />
-        <Graticule />
+        <Graticule stroke="#E2E1E2" />
 
         <Geographies geography={geoUrl}>
           { ({ geographies }) => geographies.map(renderGeography(onCountryClickWrapper)) }

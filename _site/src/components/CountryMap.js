@@ -8,21 +8,37 @@ import {
 
 const highlightedStyle = {
   default: {
-    fill: '#ff9f00'
+    fill: '#6C9CB4',
+    stroke: '#517c91',
+    strokeWidth: 2,
   },
   hover: {
-    fill: '#ff9f00'
+    fill: '#6C9CB4',
+    stroke: '#517c91',
+    strokeWidth: 2,
+  },
+  pressed: {
+    fill: '#6C9CB4',
+    stroke: '#517c91',
+    strokeWidth: 2,
   }
 };
 
 const defaultStyle = {
   default: {
-    fill: '#9998A3',
-    stroke: '#333'
+    fill: '#E2E1E2',
+    stroke: '#bfbfbf',
+    strokeWidth: 2,
   },
   hover: {
-    fill: '#9998A3',
-    stroke: '#333'
+    fill: '#E2E1E2',
+    stroke: '#bfbfbf',
+    strokeWidth: 2,
+  },
+  pressed: {
+    fill: '#E2E1E2',
+    stroke: '#bfbfbf',
+    strokeWidth: 2,
   }
 };
 
@@ -51,7 +67,7 @@ const Map = ({ countryCode, lat, lon, ...props }) => {
   return (
     <div className="wcit-country-map">
       <ComposableMap projection="geoAzimuthalEqualArea" projectionConfig={{ rotate: [-lon, -lat, 0], scale: 700 }} width="1100" height="250">
-        <Graticule />
+        <Graticule stroke="#E2E1E2" />
         <Geographies geography={geoUrl}>
           { ({ geographies }) => geographies.map(renderGeography(countryCode)) }
         </Geographies>

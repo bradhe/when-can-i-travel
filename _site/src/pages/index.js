@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql, navigate } from "gatsby"
 
 import Layout from "../components/layout"
+import Footer from "../components/Footer"
 import PageTitle from "../components/PageTitle"
 import WorldMap from "../components/WorldMap"
 import SEO from "../components/seo"
@@ -47,7 +48,7 @@ const renderCountryList = (pages, countries) => {
 };
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout footer={<Footer />}>
     <SEO title="Home" />
 
     <div className="row">

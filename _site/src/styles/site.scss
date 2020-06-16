@@ -1,12 +1,12 @@
 @import "variables";
 @import "bootstrap/bootstrap";
 
-$default-line-color: #858585;
-$now-line-color: #c2c2c2;
-$default-annotation-color: #ccc;
-$closed-annotation-color: #DD1C1A;
-$opened-annotation-color: #00A676;
-$projected-opened-annotation-color: #DD1C1A;
+$default-line-color: $gray-600;
+$now-line-color: $gray-500;
+$default-annotation-color: $gray-200;
+$closed-annotation-color: $warning;
+$opened-annotation-color: $success;
+$projected-opened-annotation-color: $danger;
 
 .wcit-timeline {
   min-height: 75px;
@@ -61,23 +61,24 @@ $projected-opened-annotation-color: #DD1C1A;
   }
 }
 
-.wcit-country-title {
-  padding: $grid-gutter-width / 2 0;
+div.wcit-page-title {
+  padding: $grid-gutter-width 0;
 }
 
 .wcit-country-visualizations {
-  border: 1px #ebebeb solid;
+  border: 1px $gray-300 solid;
 
   .wcit-country-map, .wcit-timeline {
-    border-bottom: 1px #ebebeb solid;
+    border-bottom: 1px $gray-300 solid;
   }
 
   .wcit-timeline-description {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: $gray-200;
+    color: $gray-600;
 
     p {
       padding: $grid-gutter-width / 2 0;
+
       margin: 0;
       font-weight: bold;
       text-align: center;
@@ -90,5 +91,39 @@ $projected-opened-annotation-color: #DD1C1A;
 
   p {
     margin-bottom: 0;
+  }
+}
+
+footer {
+  min-height: 120px;
+
+  padding-top: $grid-gutter-width / 2;
+
+  border-top: 1px $gray-300 solid;
+  color: $gray-500;
+
+  a {
+    color: $gray-500;
+
+    svg {
+      margin-right: 2px;
+      position: relative;
+      top: -1px;
+
+      path {
+        fill: $gray-500;
+      }
+    }
+
+    &:hover {
+      color: $gray-800;
+      text-decoration: none;
+
+      svg {
+        path {
+          fill: $gray-800;
+        }
+      }
+    }
   }
 }

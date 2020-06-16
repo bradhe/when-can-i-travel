@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby";
 
 import CountryMap from "../components/CountryMap";
+import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 import Timeline from "../components/Timeline";
 import TravelSuggestion from "../components/TravelSuggestion";
@@ -65,13 +66,13 @@ const CountryPage = ({ pageContext, data }) => {
     opened: timeline.borders_opened_at,
   };
 
+  const footer = <Footer githubLink="https://github.com/bradhe/when-can-i-travel/" />
+
   return (
-    <Layout>
+    <Layout footer={footer}>
       <div className="row">
         <div className="col">
-          <div className="wcit-country-title">
-            <PageTitle>When can I travel to {country.name}?</PageTitle>
-          </div>
+          <PageTitle>When can I travel to {country.name}?</PageTitle>
         </div>
       </div>
 

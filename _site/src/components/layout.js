@@ -14,7 +14,7 @@ import Header from "./header"
 // We import this here because it has the global layout for everything.
 import "../styles/site.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ footer, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -33,10 +33,9 @@ const Layout = ({ children }) => {
         <main className="container">
           {children}
         </main>
-
-        <footer>
-        </footer>
       </div>
+
+      {footer}
     </>
   )
 }

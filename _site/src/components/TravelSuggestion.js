@@ -15,7 +15,7 @@ const getAlertColor = (status) => {
   case "unknown":
       return "alert-secondary";
   case "do_not_travel":
-      return "alert-danger";
+      return "alert-warning";
   };
 
   // This is the default alert I guess.
