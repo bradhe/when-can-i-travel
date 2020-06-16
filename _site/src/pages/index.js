@@ -13,6 +13,7 @@ query {
     nodes {
       frontmatter {
         code
+        status
       }
     }
   }
@@ -33,18 +34,56 @@ const makePath = (country) => `/to/${country.slug}/`;
 
 const findCountry = (countries, code) => countries.filter((c) => c.code === code)[0];
 
+const regionName = (region) => {
+  switch (region) {
+  case 'AS':
+    return 'Asia';
+  case 'AF':
+    return 'Africa';
+  case 'EU':
+    return 'Europe';
+  case 'OC':
+    return 'Oceania';
+  case 'NA':
+    return 'North America';
+  case 'SA':
+    return 'South America';
+  };
+};
+
 const renderCountryList = (pages, countries) => {
-  const children = pages.map((page) => {
+  const rows = pages.map((page) => {
     const country = findCountry(countries, page.frontmatter.code);
 
     return (
-      <li key={country.slug}>
-        <Link to={makePath(country)}>{country.name}</Link>
-      </li>
+      <tr key={country.slug}>
+        <td>
+          <Link to={makePath(country)}>{country.name}</Link>
+        </td>
+        <td>
+          {regionName(country.continent)}
+        </td>
+        <td>
+          {page.frontmatter.status}
+        </td>
+      </tr>
     );
   });
 
-  return <ol>{children}</ol>;
+  return (
+    <table className="table">
+      <thead className="thead-light">
+        <tr>
+          <th>Country</th>
+          <th>Region</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows}
+      </tbody>
+    </table>
+  );
 };
 
 const IndexPage = ({ data }) => (
