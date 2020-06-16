@@ -82,6 +82,9 @@ Resources:
             QueryString: true
             Cookies: 
               Forward: none
+          MinTTL: 0
+          MaxTTL: 900
+          DefaultTTL: 300
           TargetOriginId: DefaultOrigin
           ViewerProtocolPolicy: redirect-to-https
         HttpVersion: http2
