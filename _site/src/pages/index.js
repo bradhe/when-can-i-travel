@@ -28,7 +28,7 @@ query {
 
 const onMapClick = (country) => navigate(makePath(country));
 
-const makePath = (country) => `/to/${country.slug}`;
+const makePath = (country) => `/to/${country.slug}/`;
 
 const findCountry = (countries, code) => countries.filter((c) => c.code === code)[0];
 

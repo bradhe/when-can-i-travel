@@ -1,18 +1,23 @@
 @import "variables";
 @import "bootstrap/bootstrap";
 
-$default-line-color: rgb(128, 128, 128);
-$closed-annotation-color: rgb(255, 0, 0);
-$opened-annotation-color: rgb(0,128,0);
-$partially-opened-annotation-color: rgb(255,165,0);
-$projected-opened-annotation-color: rgb(255,165,0);
+$default-line-color: #858585;
+$now-line-color: #c2c2c2;
+$default-annotation-color: #ccc;
+$closed-annotation-color: #DD1C1A;
+$opened-annotation-color: #00A676;
+$projected-opened-annotation-color: #DD1C1A;
 
 .wcit-timeline {
   min-height: 75px;
 
   line {
     stroke-width: 2px;
-    stroke: #394F49;
+    stroke: $default-line-color;
+  }
+
+  line.timeline-date-marker-now {
+    stroke: $now-line-color;
   }
 
   text.timeline-date-label {
@@ -20,39 +25,39 @@ $projected-opened-annotation-color: rgb(255,165,0);
   }
 
   rect.timeline-date-line {
-    stroke: #394F49;
-    fill: #394F49;
+    stroke: $default-annotation-color;
+    fill: $default-annotation-color;
   }
 
   rect.timeline-date-line-is-closed {
-    stroke: #DD1C1A;
-    fill: #DD1C1A;
+    stroke: $projected-opened-annotation-color;
+    fill: $projected-opened-annotation-color;
   }
 
   rect.timeline-date-line-projected-to-open {
-    stroke: #DD1C1A;
-    fill: #DD1C1A;
+    stroke: $projected-opened-annotation-color;
+    fill: $projected-opened-annotation-color;
 
     mask: url(#mask-stripe)
   }
 
   rect.timeline-date-line-projected-closed {
-    stroke: #DD1C1A;
-    fill: #DD1C1A;
+    stroke: $projected-opened-annotation-color;
+    fill: $projected-opened-annotation-color;
 
     mask: url(#mask-stripe)
   }
 
   rect.timeline-date-line-projected-opened {
-    stroke: #00A676;
-    fill: #00A676;
+    stroke: $opened-annotation-color;
+    fill: $opened-annotation-color;
 
     mask: url(#mask-stripe)
   }
 
   rect.timeline-date-line-opened {
-    stroke: #00A676;
-    fill: #00A676;
+    stroke: $opened-annotation-color;
+    fill: $opened-annotation-color;
   }
 }
 
@@ -63,16 +68,13 @@ $projected-opened-annotation-color: rgb(255,165,0);
 .wcit-country-visualizations {
   border: 1px #ebebeb solid;
 
-  .wcit-country-map {
+  .wcit-country-map, .wcit-timeline {
     border-bottom: 1px #ebebeb solid;
   }
 
-  .wcit-timeline {
-    background-color: #ebebeb;
-  }
-
   .wcit-timeline-description {
-    background-color: #ebebeb;
+    background-color: #f5f5f5;
+    color: #333;
 
     p {
       padding: $grid-gutter-width / 2 0;
@@ -80,5 +82,13 @@ $projected-opened-annotation-color: rgb(255,165,0);
       font-weight: bold;
       text-align: center;
     }
+  }
+}
+
+.wcit-travel-suggestion {
+  margin: $grid-gutter-width / 2 0;
+
+  p {
+    margin-bottom: 0;
   }
 }

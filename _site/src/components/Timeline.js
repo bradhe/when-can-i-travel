@@ -8,7 +8,7 @@ const addNowMarker = (vis, date, scale, width, height, rectHeight) => {
   var now = moment(date).toDate();
 
   vis.append("line").
-    attr('class', 'timeline-date-marker').
+    attr('class', 'timeline-date-marker timeline-date-marker-now').
     attr("x1", scale(now)).
     attr("x2", scale(now)).
     attr("y1", 0).
@@ -110,11 +110,11 @@ const renderTimeline = (elem, dates) => {
 
   var markers = vis.append('g');
 
+  addNowMarker(markers, now, xScale, width, height, rectHeight);
+
   for (var i = 1; i <= 12; i++) {
     addMonthMarker(markers, "2020-"+i+"-01", xScale, width, height, rectHeight);
   }
-
-  addNowMarker(markers, now, xScale, width, height, rectHeight);
 };
 
 const formatDate = (d) => moment(d).utc().format("MMMM Do");

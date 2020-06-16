@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import CountryMap from "../components/CountryMap";
 import PageTitle from "../components/PageTitle";
 import Timeline from "../components/Timeline";
+import TravelSuggestion from "../components/TravelSuggestion";
 
 export const query = graphql`
 query GetCountryData($countryCode: String) {
@@ -26,8 +27,6 @@ query GetCountryData($countryCode: String) {
         status
         timeline {
           borders_closed_at
-          borders_partially_opened_at
-          borders_projected_opened_at
           borders_opened_at
         }
       }
@@ -82,6 +81,12 @@ const CountryPage = ({ pageContext, data }) => {
             <CountryMap countryCode={pageContext.countryCode} lat={lat} lon={lon} />
             <Timeline dates={dates}/>
           </div>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col">
+          <TravelSuggestion status={page.frontmatter.status} />
         </div>
       </div>
 
