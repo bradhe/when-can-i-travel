@@ -1,8 +1,8 @@
-[[.github/hero.svg]]
+![When can I travel again?](.github/hero.svg)
 
-<div style="text-align: center">
-# When can I travel again?
-</div>
+<p align="center">
+  <h1>When can I travel again?</h1>
+</p>
 
 The travel industry is in shambles right now. Tourism has basically halted
 globally and there's very little information available on when and how it'll
