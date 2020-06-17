@@ -1,7 +1,7 @@
 ![When can I travel again?](.github/hero.png)
 
 <p align="center">
-  <h1>When can I travel again?</h1>
+  <a href="https://when-can-i-travel.com">When can I travel again?</a>
 </p>
 
 The travel industry is in shambles right now. Tourism has basically halted
