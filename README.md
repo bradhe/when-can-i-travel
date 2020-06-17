@@ -39,8 +39,8 @@ To learn more about the site check out the [_site](_site) folder.
 ### Markdown format
 
 Explaining the specifics of how Markdown works is a bit out of scope for this
-little document but you can (learn how it works from the dude who invented
-it)[https://daringfireball.net/projects/markdown/syntax]! That said, each
+little document but you can [learn how it works from the dude who invented
+it](https://daringfireball.net/projects/markdown/syntax)! That said, each
 Markdown file has a little section at the top (called the frontmatter) that is
 used for generating some cool stuff in the site.
 
