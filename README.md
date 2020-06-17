@@ -1,8 +1,10 @@
 ![When can I travel again?](.github/hero.png)
 
 <p align="center">
-  <a href="https://when-can-i-travel.com">When can I travel again?</a>
+  <a href="https://when-can-i-travel.com"><strong>When can I travel again?</strong></a>
 </p>
+
+## What is this project?
 
 The travel industry is in shambles right now. Tourism has basically halted
 globally and there's very little information available on when and how it'll
@@ -19,7 +21,7 @@ recommendations to people who want to travel. I'm collecting as much
 information as I can for each country and writing articles and recommendations
 about how to think about travel. But I can't do it alone--I need your help!
 
-## How does this thing work?
+## How does it work?
 
 Think of this project as a sort of wiki. There's a markdown file for each
 country in the [countries](countries) folder. As I collect information about
