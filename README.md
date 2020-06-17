@@ -1,4 +1,4 @@
-![When can I travel again?](.github/hero.svg)
+![When can I travel again?](.github/hero.png)
 
 <p align="center">
   <h1>When can I travel again?</h1>
