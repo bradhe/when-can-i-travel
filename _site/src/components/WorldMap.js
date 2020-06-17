@@ -61,14 +61,17 @@ const renderMap = ({ onCountryClick }) => {
     };
 
     return (
-      <ComposableMap projectionConfig={projectionConfig} width="800" height="400">
-        <Sphere />
-        <Graticule stroke="#E2E1E2" />
+      <div className="wcit-world-map">
+        <ComposableMap projectionConfig={projectionConfig} width="800" height="390">
+          <Sphere />
+          <Graticule stroke="#E2E1E2" />
 
-        <Geographies geography={geoUrl}>
-          { ({ geographies }) => geographies.map(renderGeography(onCountryClickWrapper)) }
-        </Geographies>
-      </ComposableMap>
+          <Geographies geography={geoUrl}>
+            { ({ geographies }) => geographies.map(renderGeography(onCountryClickWrapper)) }
+          </Geographies>
+        </ComposableMap>
+        <p className="text-center figure-caption">Click on a country to learn more.</p>
+      </div>
     );
   };
 };
