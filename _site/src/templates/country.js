@@ -78,6 +78,12 @@ const CountryPage = ({ pageContext, data }) => {
 
       <div className="row">
         <div className="col">
+          <TravelSuggestion status={page.frontmatter.status} />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col">
           <div className="wcit-country-visualizations">
             <CountryMap countryCode={pageContext.countryCode} lat={lat} lon={lon} />
             <Timeline dates={dates}/>
@@ -87,13 +93,7 @@ const CountryPage = ({ pageContext, data }) => {
 
       <div className="row">
         <div className="col">
-          <TravelSuggestion status={page.frontmatter.status} />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <article dangerouslySetInnerHTML={{ __html: page.html }} />
+          <article className="wcit-article" dangerouslySetInnerHTML={{ __html: page.html }} />
         </div>
       </div>
     </Layout>
