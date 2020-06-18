@@ -1,0 +1,2 @@
+Sitemap: https://when-can-i-travel.com/sitemap.xml
+User-agent: *
