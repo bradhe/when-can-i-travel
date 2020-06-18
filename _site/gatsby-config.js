@@ -3,6 +3,7 @@ module.exports = {
     title: `When can I travel?`,
     description: `Learn about when you can travel again.`,
     author: `@bradhe`,
+    siteUrl: 'https://when-can-i-travel.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -52,7 +53,8 @@ module.exports = {
         respectDNT: true,
         pageTransitionDelay: 0
       }
-    }
+    },
+    `gatsby-plugin-sitemap`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
