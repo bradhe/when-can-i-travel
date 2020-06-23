@@ -35,7 +35,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   pages.forEach((page) => {
     const country = findCountry(countries, page.frontmatter.code);
-    console.log('* generating page for ', page.frontmatter.code);
 
     createPage({
       path: '/to/' + country.slug,
@@ -48,3 +47,19 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions
+    const typeDefs = `
+      type MarkdownRemarkFrontmatterTimeline implements Node @dontInfer {
+        borders_closed_at: Date
+        borders_opened_at: Date
+      }
+      type MarkdownRemarkFrontmatter implements Node @dontInfer {
+        code: String
+        status: String
+        timeline: MarkdownRemarkFrontmatterTimeline
+      }
+    `
+    createTypes(typeDefs)
+}

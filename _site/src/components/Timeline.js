@@ -148,7 +148,20 @@ class Timeline extends React.Component {
     const { container } = this.refs;
     const { dates } = this.props;
 
-    renderTimeline(container, dates);
+    this.renderFunc = () => {
+      container.innerHTML = '';
+      renderTimeline(container, dates);
+    };
+
+    window.addEventListener("resize", this.renderFunc);
+
+    this.renderFunc();
+  }
+
+  componentWillUnmount() {
+    if (this.renderFunc) {
+      window.removeEventListener("resize", this.renderFunc);
+    }
   }
 
   render() {

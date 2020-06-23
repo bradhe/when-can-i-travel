@@ -42,6 +42,7 @@ module.exports = {
       options: {
         name: `country-pages`,
 	path: `${__dirname}/../countries/`,
+        ignore: ["\.sw[onp]$"],
       },
     },
     `gatsby-plugin-sass`,
