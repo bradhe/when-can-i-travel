@@ -34,7 +34,7 @@ const onMapClick = (country) => navigate(makePath(country));
 const makePath = (country) => `/to/${country.slug}/`;
 
 const IndexPage = ({ data }) => (
-  <Layout footer={<Footer />}>
+  <Layout>
     <SEO title="Home" />
 
     <div className="row">
@@ -54,6 +54,8 @@ const IndexPage = ({ data }) => (
         <CountryList countries={data.allCountriesYaml.nodes} pages={data.allMarkdownRemark.nodes} />
       </div>
     </div>
+
+    <Footer />
   </Layout>
 );
 

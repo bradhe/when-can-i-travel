@@ -1,12 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby";
+import { prop } from 'ramda';
 
 import CountryMap from "../components/CountryMap";
 import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 import Timeline from "../components/Timeline";
 import TravelSuggestion from "../components/TravelSuggestion";
+import GithubLink from "../components/GithubLink";
+import SEO from "../components/seo";
 
 export const query = graphql`
 query GetCountryData($countryCode: String) {
@@ -23,6 +26,7 @@ query GetCountryData($countryCode: String) {
   }
   allMarkdownRemark(filter: {frontmatter: {code: {eq: $countryCode }}}){
     nodes {
+      fileAbsolutePath
       frontmatter {
         code
         status
@@ -47,6 +51,11 @@ const assertOneNode = (data) => {
   }
 };
 
+const makeRepoPath = (absolutePath) => {
+  const segments = absolutePath.split("/");
+  return segments[segments.length - 2] + "/" + segments[segments.length - 1];
+}
+
 const CountryPage = ({ pageContext, data }) => {
   // there should be only one node here. If there isn't then something went
   // wrong and we should abort the build.
@@ -62,14 +71,17 @@ const CountryPage = ({ pageContext, data }) => {
   const { timeline } = page.frontmatter;
 
   const dates = {
-    closed: timeline.borders_closed_at,
-    opened: timeline.borders_opened_at,
+    closed: prop('borders_closed_at', timeline),
+    opened: prop('borders_opened_at', timeline),
   };
 
-  const footer = <Footer githubLink="https://github.com/bradhe/when-can-i-travel/" />
-
   return (
-    <Layout footer={footer}>
+    <Layout>
+      <SEO
+        title={`When can I travel to ${country.name}?`}
+        description={`Currated, expert information information on travel and tourism to ${country.name} in age of COVID-19.`}
+      />
+
       <div className="row">
         <div className="col">
           <PageTitle>When can I travel to {country.name}?</PageTitle>
@@ -96,6 +108,9 @@ const CountryPage = ({ pageContext, data }) => {
           <article className="wcit-article" dangerouslySetInnerHTML={{ __html: page.html }} />
         </div>
       </div>
+      <Footer>
+        <GithubLink repoPath={makeRepoPath(page.fileAbsolutePath)} />
+      </Footer>
     </Layout>
   )
 };
