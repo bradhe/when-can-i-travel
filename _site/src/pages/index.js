@@ -26,6 +26,13 @@ query {
       code
     }
   }
+  allCountryStatusYaml {
+    nodes {
+      code
+      color
+      label
+    }
+  }
 }
 `;
 
@@ -51,7 +58,7 @@ const IndexPage = ({ data }) => (
 
     <div className="row">
       <div className="col">
-        <CountryList countries={data.allCountriesYaml.nodes} pages={data.allMarkdownRemark.nodes} />
+        <CountryList countries={data.allCountriesYaml.nodes} pages={data.allMarkdownRemark.nodes} states={data.allCountryStatusYaml.nodes} />
       </div>
     </div>
 

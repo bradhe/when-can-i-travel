@@ -1,0 +1,23 @@
+---
+- code: wait_and_see
+  color: warning
+  label: wait and see
+  travel_recommendation:
+    title: Wait and see.
+    description: |
+      This country is likely to open soon. Wait a bit to see if it will or not.
+- code: do_not_travel
+  color: danger
+  label: do not travel
+  travel_recommendation:
+    title: Do not travel to this country.
+    description: |
+      This country is not ready for tourism to get started yet. Do not book
+      travel to this country yet.
+- code: unknown
+  color: secondary
+  label: unknown
+  travel_recommendation:
+    title: Travel status is unknown.
+    description: |
+      We haven't learned enough about this country to make a recommendation yet.

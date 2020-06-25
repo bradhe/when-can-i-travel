@@ -1,0 +1,60 @@
+$default-line-color: $gray-600;
+$now-line-color: $gray-500;
+$default-annotation-color: $gray-200;
+$closed-annotation-color: $warning;
+$opened-annotation-color: $success;
+$projected-opened-annotation-color: $danger;
+
+.wcit-timeline {
+  min-height: 75px;
+
+  line {
+    stroke-width: 2px;
+    stroke: $default-line-color;
+  }
+
+  line.timeline-date-marker-now {
+    stroke: $now-line-color;
+  }
+
+  text.timeline-date-label {
+    text-anchor: middle;
+  }
+
+  rect.timeline-date-line {
+    stroke: $default-annotation-color;
+    fill: $default-annotation-color;
+  }
+
+  rect.timeline-date-line-is-closed {
+    stroke: $projected-opened-annotation-color;
+    fill: $projected-opened-annotation-color;
+  }
+
+  rect.timeline-date-line-projected-to-open {
+    stroke: $projected-opened-annotation-color;
+    fill: $projected-opened-annotation-color;
+
+    mask: url(#mask-stripe)
+  }
+
+  rect.timeline-date-line-projected-closed {
+    stroke: $projected-opened-annotation-color;
+    fill: $projected-opened-annotation-color;
+
+    mask: url(#mask-stripe)
+  }
+
+  rect.timeline-date-line-projected-opened {
+    stroke: $opened-annotation-color;
+    fill: $opened-annotation-color;
+
+    mask: url(#mask-stripe)
+  }
+
+  rect.timeline-date-line-opened {
+    stroke: $opened-annotation-color;
+    fill: $opened-annotation-color;
+  }
+}
+
