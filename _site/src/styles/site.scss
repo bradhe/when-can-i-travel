@@ -3,6 +3,7 @@
 
 @import "timeline";
 @import "country-list";
+@import "world-map";
 
 div.wcit-page-title {
   padding: $spacer * 2 0;
@@ -35,10 +36,6 @@ div.wcit-page-title {
   p {
     margin-bottom: 0;
   }
-}
-
-.wcit-world-map {
-  margin: $spacer 0;
 }
 
 footer {
