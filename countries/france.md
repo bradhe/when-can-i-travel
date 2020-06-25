@@ -1,6 +1,6 @@
 ---
 code: FR
-status: do_not_travel
+status: wait_and_see
 timeline:
   borders_closed_at: 2020-03-16
   borders_opened_at: 2020-07-01
