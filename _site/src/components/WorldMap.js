@@ -9,27 +9,10 @@ import {
   Geography
 } from "react-simple-maps";
 
-const defaultStyle = {
-  default: {
-    fill: '#E2E1E2',
-    stroke: '#bfbfbf',
-  },
-  hover: {
-    fill: '#6C9CB4',
-    stroke: '#517c91',
-  },
-  pressed: {
-    fill: '#6C9CB4',
-    stroke: '#517c91',
-  }
-};
-
 const geoUrl = '/topojson-world-110m.json';
 
 const renderGeography = (onClick) => {
   return (geo, color) => {
-    let style = defaultStyle;
-
     return (
       <Geography
         onClick={() => onClick(geo)}

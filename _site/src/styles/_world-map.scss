@@ -26,9 +26,9 @@
   }
 
   .wcit-country-travel-status-secondary {
-    fill: $gray-500;
+    fill: $gray-400;
     stroke-width: 1.5;
-    stroke: $gray-600;
+    stroke: $gray-500;
 
     &:hover {
       fill: darken($gray-500, 10%);
@@ -38,12 +38,14 @@
   }
 
   path {
+    transition: 0.20s;
+
     &:active, &:focus {
       outline: none;
     }
+  }
 
-    &:hover {
-      cursor: pointer;
-    }
+  .rsm-geography {
+    cursor: pointer;
   }
 }
