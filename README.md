@@ -6,14 +6,10 @@
 
 ## What is this project?
 
-The travel industry is in shambles right now. Tourism has basically halted
-globally and there's very little information available on when and how it'll
-get started again. Despite the lack of opportunity, millions of people are just
-_waiting_ to get back out there and start traveling again.
-
-Information and (perhaps more importantly) authoritative recommendations
-regarding travel has been basically non-existant. It's on us, the travellers,
-to figure it out and keep ourselves informed.
+People (myself included) are itching to travel but information and, perhaps
+more importantly, authoritative recommendations regarding travel and tourism
+has been basically non-existant. It's on us, the travellers, to figure it out
+and keep ourselves informed.
 
 This project is an attempt to start gathering information about travel,
 tourism, and the politics surrounding it to make informed decisions and
